@@ -1,0 +1,1 @@
+﻿Get-MailboxExportRequest -status completed | Get-MailboxExportRequestStatistics -IncludeReport | Format-List 

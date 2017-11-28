@@ -1,0 +1,6 @@
+Export til Excell fra Jira
+Gem som xlsx
+gem som unicode .txt
+kopier tab og erstat med ,
+gem som txt utf8
+omdøb til csv

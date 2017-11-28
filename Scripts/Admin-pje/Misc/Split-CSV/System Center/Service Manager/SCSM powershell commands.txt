@@ -1,0 +1,76 @@
+Slette test incident
+
+Get-SCSMObject -Class (Get-SCSMClass -Name System.workitem.incident$) | ? {$_.id -eq "IR367"} | Remove-SCSMObject -Force -Confirm:$false
+
+Get-SCSMObject -Class (Get-SCSMClass -Name System.workitem.servicerequest$) | ? {$_.id -eq "SR382"} | Remove-SCSMObject -Force -Confirm:$false
+
+incident class properties
+
+$class = get-scsmclass -Name system.workitem.incident
+$class.propertycollection | fl name, length
+
+
+Antal incidents
+
+Get-SCSMObject -Class (Get-SCSMClass -Name System.WorkItem.Incident$)
+
+get-scsmobject -class (Get-SCSMClass system.workitem.incident$) | Get-Member -name classification | fl
+
+get-scsmobject -Class (Get-SCSMClass system.workitem.incident$) | get-member
+
+
+TypeName   : EnterpriseManagementObject#System.WorkItem.Incident
+Name       : Classification
+MemberType : NoteProperty
+Definition : Microsoft.EnterpriseManagement.Configuration.ManagementPackEnumeration
+             Classification=Enum.faa864013e45408094c5440ec46f100d
+
+
+
+$(Get-SCSMClass system.workitem.incident).getbasetype()
+
+Abstract Name                                           DisplayName       ManagementPack
+-------- ----                                           -----------       --------------
+True     System.SolutionSettings                        Solution Settings System.AdminItem.Library
+True     Microsoft.SystemCenter.ConfigureWorkflowTarget                   Microsoft.SystemCenter.Library
+True     Microsoft.SystemCenter.ConfigureWorkflowTarget                   Microsoft.SystemCenter.Library
+True     Microsoft.SystemCenter.WorkflowTarget                            Microsoft.SystemCenter.Library
+True     System.WorkItem.TroubleTicket                  Trouble Ticket    System.WorkItem.Library
+
+
+
+Get-SCSMRelationShipClass | ? {$_.name -like "*system.workitem*"}
+
+Name                                            Source             Target
+----                                            ------             ------
+System.WorkItem.BillableTimeHasWorkingUser      WorkingUser        BillableTime
+System.WorkItem.TroubleTicketClosedByUser       ClosedByUser       RelatesToTroubleTicket
+System.WorkItem.TroubleTicketHasActionLog       ActionLog          AppliesToTroubleTicket
+System.WorkItem.TroubleTicketHasAnalystComment  AnalystComment     AppliesToTroubleTicket
+System.WorkItem.TroubleTicketHasAuditComment    AuditComment       AppliesToTroubleTicket
+System.WorkItem.TroubleTicketHasNotificationLog NotificationLog    AppliesToTroubleTicket
+System.WorkItem.TroubleTicketHasUserComment     UserComment        AppliesToTroubleTicket
+System.WorkItem.TroubleTicketResolvedByUser     ResolvedByUser     RelatesToTroubleTicket
+System.WorkItemAboutConfigItem                  IsAboutConfigItems HasRelatedWorkItems
+System.WorkItemAffectedUser                     IsCreatedForUser   RequestedWorkItem
+System.WorkItemAssignedToUser                   IsAssignedToUser   AssignedWorkItem
+System.WorkItemClosedByUser                     WorkItem           ClosedByUser
+System.WorkItemCreatedByUser                    IsCreatedByUser    CreatedWorkItem
+System.WorkItemDependsOnWorkItem                DependsOnWorkItem  DependedByWorkItem
+System.WorkItemGroupContainsWorkItems           WorkItemGroup      WorkItem
+System.WorkItemHasActionLog                     ActionLog          AppliesToWorkItem
+System.WorkItemHasBillableTime                  BillableTime       AppliesToWorkItem
+System.WorkItemHasChildWorkItem                 ChildWorkItem      ParentWorkItem
+System.WorkItemHasCommentLog                    Comment            AppliesToWorkItem
+System.WorkItemHasFileAttachment                WorkItem           FileAttachment
+System.WorkItemHasParentWorkItem                ChildWorkItem      ParentWorkItem
+System.WorkItemImpactsService                   ImpactingWorkItem  ImpactedService
+System.WorkItemRelatesToConfigItem              RelatesToWorkItem  RelatesToConfigItem
+System.WorkItemRelatesToWorkItem                RelatesToWorkItem  RelatesToWorkItem_
+System.WorkItemRequestedByUser                  IsRequestedByUser  CreatedWorkItem
+System.WorkItemResolvesWorkItem                 ResolvesWorkItem   ResolvedByWorkItem
+System.WorkItemAboutCatalogItem                 WorkItem           CatalogItem
+System.WorkItemRelatesToRequestOffering         WorkItem           RequestOffering
+System.WorkItemHasSLAInstanceInformation        Source             Target
+System.WorkItemContainsActivity                 WorkItem           Activity
+System.WorkItem.IncidentPrimaryOwner            PrimaryOwner       RelatesToIncident

@@ -1,0 +1,5 @@
+<Variables>
+	<ResourceGroup>RG-Automation</ResourceGroup>
+	<AutomationAccountName>AzAutomationWestEurope01</AutomationAccountName>
+	<Subscription>d656c404-566b-4db7-b6ac-495dd728b201</Subscription>
+</Variables>

@@ -1,0 +1,52 @@
+Name,OU,Description
+ECCO Services,,
+Technical Services,"OU=ECCO Services",
+Database Hotel,"OU=Technical Services,OU=ECCO Services",Servers not related to specific business services
+Backup,"OU=Technical Services,OU=ECCO Services",Servers related to backup services - DPM, Veeam
+DHCP,"OU=Technical Services,OU=ECCO Services",Servers related to DHCP services
+File,"OU=Technical Services,OU=ECCO Services",Servers related to file services
+Web Hotel,"OU=Technical Services,OU=ECCO Services",Servers related to hosting websites
+Multi Purpose,"OU=Technical Services,OU=ECCO Services",Servers wich contains multiple services of type: DHCP, File and Print etc.
+Antivirus,"OU=Technical Services,OU=ECCO Services",Servers related to antivirus
+Federation,"OU=Technical Services,OU=ECCO Services",Servers related to federation services
+Monitoring,"OU=Technical Services,OU=ECCO Services",Servers related to monitoring - SCOM
+ERP,"OU=Technical Services,OU=ECCO Services",Servers related to ERP supporting systems
+SAP - Indexing,"OU=ERP,OU=Technical Services,OU=ECCO Services",Servers related to SAP Indexing - Trex
+SAP - Remote Access,"OU=ERP,OU=Technical Services,OU=ECCO Services",Servers related to SAP Access
+SAP - Live Cache,"OU=ERP,OU=Technical Services,OU=ECCO Services",Servers related to SAP Cache
+SAP - Management,"OU=ERP,OU=Technical Services,OU=ECCO Services",Servers related to SAP Installation and management
+Print,"OU=Technical Services,OU=ECCO Services",Servers related to Print services
+Virtualization,"OU=Technical Services,OU=ECCO Services",Servers related to Virtulization - HyperV, VMM etc.
+Reverse Proxy,"OU=Technical Services,OU=ECCO Services",Servers related to Network services - WAP, UAG, KEMP
+Network Authentication,"OU=Technical Services,OU=ECCO Services",Servers related to Network services - NPS, Radius
+Network Access,"OU=Technical Services,OU=ECCO Services",Servers related to Network services - DA
+Network Acceleration,"OU=Technical Services,OU=ECCO Services",Servers related to Network services - Riverbed
+Identity Management,"OU=Technical Services,OU=ECCO Services",Servers related to Identity Management - Azure AD sync, FIM, IAM etc.
+Public Key Infrastructure,"OU=Technical Services,OU=ECCO Services",Servers related to PKI - Certificate Authority
+Orchestration,"OU=Technical Services,OU=ECCO Services",Servers related to Orchestration, batch and ITSM
+Configuration Management,"OU=Technical Services,OU=ECCO Services",Servers related to Configuration Management - SCCM, License Management Server, MBAM
+Management Tools,"OU=Technical Services,OU=ECCO Services",Servers related to Infrastructure Management
+Terminal Services,"OU=Technical Services,OU=ECCO Services",Servers related to Terminal services Infrastructure Components - RDS Gateway, RDS Connection Broker, RDS Web Access
+Business Services,"OU=ECCO Services",
+Mail,"OU=Business Services,OU=ECCO Services",Servers related to Mail systems - Exchange
+Telephony,"OU=Business Services,OU=ECCO Services",Servers related to Telephony systems - Miralix, Netwise, PBX
+Communication,"OU=Business Services,OU=ECCO Services",Servers related to Communication systems - Skype for business, Office Webapp
+Collaboration,"OU=Business Services,OU=ECCO Services",Servers related to Collaboration - Sharepoint
+Notes,"OU=Collaboration,OU=Business Services,OU=ECCO Services",Servers related to Lotus Notes
+ERP,"OU=Business Services,OU=ECCO Services",Servers related to ERP Systems
+SAP - Fashing Management System,"OU=ERP,OU=Business Services,OU=ECCO Services",Servers related to SAP - Fashing Management System
+SAP - Business Objects,"OU=ERP,OU=Business Services,OU=ECCO Services",Servers related to SAP - Business Objects
+SAP - Adobe Document Services,"OU=ERP,OU=Business Services,OU=ECCO Services",Servers related to SAP - Adobe Document Services
+SAP - Archiving,"OU=ERP,OU=Business Services,OU=ECCO Services",Servers related to SAP - Archiving
+SAP - Business Planning Consolidation,"OU=ERP,OU=Business Services,OU=ECCO Services",Servers related to SAP - Business Planning Consolidation
+Forecasting (CDMI),"OU=Business Services,OU=ECCO Services",Servers related to Forecasting
+Retail,"OU=Business Services,OU=ECCO Services",Servers related to Retail
+Product Lifecycle Management,"OU=Business Services,OU=ECCO Services",Servers related to Product Lifecycle Management
+Video Survailance,"OU=Business Services,OU=ECCO Services",Video Survaillance
+Product Information Management,"OU=Business Services,OU=ECCO Services",DAM
+Warehouse Management (WMS),"OU=Business Services,OU=ECCO Services",Unicontrol, Teklogix, PDA Web
+Data Exchange,"OU=Business Services,OU=ECCO Services",EDI, FTP, Share file
+Terminal Services,"OU=Business Services,OU=ECCO Services",Session Host - User farm, External Farm
+CFP,"OU=Business Services,OU=ECCO Services",NA
+MAP,"OU=Business Services,OU=ECCO Services",NA
+Antara,"OU=Business Services,OU=ECCO Services",NA

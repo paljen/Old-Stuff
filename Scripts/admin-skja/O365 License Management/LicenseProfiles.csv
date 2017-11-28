@@ -1,0 +1,3 @@
+Id;Name;Type;AccountSkuId;DisabledPlans
+1;Retail-Store-Manager;E1;ecco:STANDARDPACK;INTUNE_O365
+2;Retail-Store-User;EOP1;ecco:EXCHANGESTANDARD;INTUNE_O365

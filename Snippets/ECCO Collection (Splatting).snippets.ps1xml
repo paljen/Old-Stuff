@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+    <Snippets  xmlns='http://schemas.microsoft.com/PowerShell/Snippets'>
+        <Snippet Version='1.0.0'>
+            <Header>
+                <Title>ECCO Collection (Splatting)</Title>
+                <Description>Use hashtable as properties</Description>
+                <Author>Palle Jensen</Author>
+                <SnippetTypes>
+                    <SnippetType>Expansion</SnippetType>
+                </SnippetTypes>
+            </Header>
+
+            <Code>
+                <Script Language='PowerShell' CaretOffset='0'>
+                    <![CDATA[
+#http://blogs.technet.com/b/heyscriptingguy/archive/2010/10/18/use-splatting-to-simplify-your-powershell-scripts.aspx
+
+$usr = @{
+    SamAccountName = "PJ*"
+    LastName = "Jensen"
+}
+
+Get-QADUser @usr
+]]>
+                </Script>
+            </Code>
+
+    </Snippet>
+</Snippets>
+

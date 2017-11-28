@@ -1,0 +1,100 @@
+10/19/2015 10:00:41: ------------------------------------------------------------------------------------------------------------
+10/19/2015 10:00:41: Running as user [PRD\Admin-PJE] on host [DK4836]
+10/19/2015 10:00:41: Importing Remote Exchange 2010 Cmdlets - http://dkhqexc04n01.prd.eccocorp.net/powershell/
+10/19/2015 10:01:03: Getting Mailbox for user pjetestuser
+10/19/2015 10:01:04: Mailbox Export Requests..
+10/19/2015 10:01:04: New-MailboxExportRequest -Mailbox pjetestuser -FilePath \\dkhqBackup04\Exchange-PST-Export$\pjetestuser.pst -confirm:$false
+10/19/2015 10:01:05: Archive Status is [None] and Archive State [Local] - No Action taken
+10/19/2015 10:01:05: Script Ended Successfully..
+10/19/2015 10:03:13: ------------------------------------------------------------------------------------------------------------
+10/19/2015 10:03:13: Running as user [PRD\Admin-PJE] on host [DK4836]
+10/19/2015 10:03:17: Getting Mailbox for user pjetestuser
+10/19/2015 10:03:17: Mailbox Export Requests..
+10/19/2015 10:03:17: New-MailboxExportRequest -Mailbox pjetestuser -FilePath \\dkhqBackup04\Exchange-PST-Export$\pjetestuser.pst -confirm:$false
+10/19/2015 10:03:18: Archive Status is [None] and Archive State [Local] - No Action taken
+10/19/2015 10:03:28: Cleaning up MailboxExport with status Completed
+10/19/2015 10:03:28: Get-MailboxExportRequest MailboxExport | Remove-MailboxExportRequest -Confirm:$false
+10/19/2015 10:03:33: Script Ended Successfully..
+10/19/2015 10:03:36: ------------------------------------------------------------------------------------------------------------
+10/19/2015 10:03:36: Running as user [PRD\Admin-PJE] on host [DK4836]
+10/19/2015 10:03:38: Adding administrative permissions to perform the export request..
+10/19/2015 10:03:38: Add-MailboxPermission –Identity ksk –User prd\admin-pje –AccessRights FullAccess –Confirm:$false -ErrorAction stop
+10/19/2015 10:03:38: Getting Mailbox for user ksk
+10/19/2015 10:03:38: Exception caught: The operation couldn't be performed because object 'ksk' couldn't be found on 'dkhqdc01.prd.eccocorp.net'.
+10/19/2015 10:03:38: [$ErrorState:2] - Error
+10/19/2015 10:03:38: Script Terminated..
+10/19/2015 10:19:37: ------------------------------------------------------------------------------------------------------------
+10/19/2015 10:19:37: Running as user [PRD\Admin-PJE] on host [DK4836]
+10/19/2015 10:19:41: Getting Mailbox for user pjetestuser
+10/19/2015 10:19:41: Mailbox Export Requests..
+10/19/2015 10:19:41: New-MailboxExportRequest -Mailbox pjetestuser -FilePath \\dkhqBackup04\Exchange-PST-Export$\pjetestuser.pst -confirm:$false
+10/19/2015 10:19:41: Archive Status is [None] and Archive State [Local] - No Action taken
+10/19/2015 10:25:11: ------------------------------------------------------------------------------------------------------------
+10/19/2015 10:25:11: Running as user [PRD\Admin-PJE] on host [DK4836]
+10/19/2015 10:25:14: Getting Mailbox for user pjetestuser
+10/19/2015 10:25:14: Mailbox Export Requests..
+10/19/2015 10:25:14: New-MailboxExportRequest -Mailbox pjetestuser -FilePath \\dkhqBackup04\Exchange-PST-Export$\pjetestuser.pst -confirm:$false
+10/19/2015 10:25:15: Archive Status is [None] and Archive State [Local] - No Action taken
+10/19/2015 10:25:25: Cleaning up MailboxExport with status Completed
+10/19/2015 10:25:25: Get-MailboxExportRequest MailboxExport | Remove-MailboxExportRequest -Confirm:$false
+10/19/2015 10:25:30: Script Ended Successfully..
+10/20/2015 11:23:54: ------------------------------------------------------------------------------------------------------------
+10/20/2015 11:23:54: Running as user [PRD\Admin-PJE] on host [DK4836]
+10/20/2015 11:23:54: Importing Remote Exchange 2010 Cmdlets - http://dkhqexc04n01.prd.eccocorp.net/powershell/
+10/20/2015 11:24:10: Adding administrative permissions to perform the export request..
+10/20/2015 11:24:10: Add-MailboxPermission –Identity afe –User prd\admin-pje –AccessRights FullAccess –Confirm:$false -ErrorAction stop
+10/20/2015 11:24:18: Getting Mailbox for user afe
+10/20/2015 11:24:19: Mailbox Export Requests..
+10/20/2015 11:24:19: New-MailboxExportRequest -Mailbox afe -FilePath \\dkhqBackup04\Exchange-PST-Export$\afe.pst -confirm:$false
+10/20/2015 11:24:24: Mailbox Export Requests -Archive..
+10/20/2015 11:24:24: New-MailboxExportRequest -Mailbox afe -ContentFilter {(Received -lt 10/20/2015 11:24:18) -and (Received -gt 10/20/2014 11:24:18)} -FilePath \\dkhqBackup04\Exchange-PST-Export$\afe Archive Year0-Year1.pst -IsArchive -confirm:$false
+10/20/2015 11:24:24: New-MailboxExportRequest -Mailbox afe -ContentFilter {(Received -lt 10/20/2014 11:24:18) -and (Received -gt 10/20/2013 11:24:18)} -FilePath \\dkhqBackup04\Exchange-PST-Export$\afe Archive Year1-Year2.pst -IsArchive -confirm:$false
+10/20/2015 11:24:25: New-MailboxExportRequest -Mailbox afe -ContentFilter {(Received -lt 10/20/2013 11:24:18) -and (Received -gt 10/20/2012 11:24:18)} -FilePath \\dkhqBackup04\Exchange-PST-Export$\afe Archive Year2-Year3.pst -IsArchive -confirm:$false
+10/20/2015 11:24:25: New-MailboxExportRequest -Mailbox afe -ContentFilter {(Received -lt 10/20/2012 11:24:18) -and (Received -gt 10/20/2011 11:24:18)} -FilePath \\dkhqBackup04\Exchange-PST-Export$\afe Archive Year3-Year4.pst -IsArchive -confirm:$false
+10/20/2015 11:24:25: Exception caught: The provided ContentFilter value is invalid. ContentFilter is invalid. The value "10/20/2012 11:24:18) -and (Received -gt " could not be converted to type System.DateTime. --> The value "10/20/2012 11:24:18) -and (Received -gt " could not be converted to type System.DateTime.
+10/20/2015 11:24:25: [$ErrorState:2] - Error
+10/20/2015 11:24:25: Script Terminated..
+10/20/2015 11:28:39: ------------------------------------------------------------------------------------------------------------
+10/20/2015 11:28:39: Running as user [PRD\Admin-PJE] on host [DK4836]
+10/20/2015 11:28:43: Getting Mailbox for user afe
+10/20/2015 11:28:43: Mailbox Export Requests..
+10/20/2015 11:28:43: New-MailboxExportRequest -Mailbox afe -FilePath \\dkhqBackup04\Exchange-PST-Export$\afe.pst -confirm:$false
+10/20/2015 11:30:22: ------------------------------------------------------------------------------------------------------------
+10/20/2015 11:30:22: Running as user [PRD\Admin-PJE] on host [DK4836]
+10/20/2015 11:30:22: Importing Remote Exchange 2010 Cmdlets - http://dkhqexc04n01.prd.eccocorp.net/powershell/
+10/20/2015 11:30:33: Getting Mailbox for user afe
+10/20/2015 11:30:33: Mailbox Export Requests..
+10/20/2015 11:30:33: New-MailboxExportRequest -Mailbox afe -FilePath \\dkhqBackup04\Exchange-PST-Export$\afe.pst -confirm:$false
+10/20/2015 11:31:33: Exception caught: The call to 'net.tcp://dkhqexc04n03.prd.eccocorp.net/Microsoft.Exchange.MailboxReplicationService DKHQEXC04N03.prd.eccocorp.net (15.0.1104.4 caps:1FFF)' timed out. Error details: This request operation sent to net.tcp://dkhqexc04n03.prd.eccocorp.net/Microsoft.Exchange.MailboxReplicationService did not receive a reply within the configured timeout (00:01:00).  The time allotted to this operation may have been a portion of a longer timeout.  This may be because the service is still processing the operation or because the service was unable to send a reply message.  Please consider increasing the operation timeout (by casting the channel/proxy to IContextChannel and setting the OperationTimeout property) and ensure that the service is able to connect to the client.
+10/20/2015 11:31:33: [$ErrorState:2] - Error
+10/20/2015 11:31:33: Script Terminated..
+10/20/2015 11:38:10: ------------------------------------------------------------------------------------------------------------
+10/20/2015 11:38:10: Running as user [PRD\Admin-PJE] on host [DK4836]
+10/20/2015 11:38:16: Getting Mailbox for user pjetestuser
+10/20/2015 11:38:16: Mailbox Export Requests..
+10/20/2015 11:38:16: New-MailboxExportRequest -Mailbox pjetestuser -FilePath \\dkhqBackup04\Exchange-PST-Export$\pjetestuser.pst -confirm:$false
+10/20/2015 11:38:17: Mailbox Export Requests -Archive..
+10/20/2015 11:38:17: New-MailboxExportRequest -Mailbox pjetestuser -FilePath \\dkhqBackup04\Exchange-PST-Export$\pjetestuser Archive.pst -IsArchive -confirm:$false
+10/20/2015 11:38:28: ------------------------------------------------------------------------------------------------------------
+10/20/2015 11:38:28: Running as user [PRD\Admin-PJE] on host [DK4836]
+10/20/2015 11:38:35: Getting Mailbox for user afe
+10/20/2015 11:38:36: Mailbox Export Requests..
+10/20/2015 11:38:36: New-MailboxExportRequest -Mailbox afe -FilePath \\dkhqBackup04\Exchange-PST-Export$\afe.pst -confirm:$false
+10/20/2015 11:38:36: Exception caught: Unable to open PST file '\\dkhqBackup04\Exchange-PST-Export$\afe.pst'. Error details: File size (8192) is less than header size (17408)
+10/20/2015 11:38:36: [$ErrorState:2] - Error
+10/20/2015 11:38:36: Script Terminated..
+10/20/2015 11:39:46: ------------------------------------------------------------------------------------------------------------
+10/20/2015 11:39:46: Running as user [PRD\Admin-PJE] on host [DK4836]
+10/20/2015 11:39:48: Getting Mailbox for user afe
+10/20/2015 11:39:48: Mailbox Export Requests..
+10/20/2015 11:39:48: New-MailboxExportRequest -Mailbox afe -FilePath \\dkhqBackup04\Exchange-PST-Export$\afe.pst -confirm:$false
+10/20/2015 11:39:48: Mailbox Export Requests -Archive..
+10/20/2015 11:39:48: New-MailboxExportRequest -Mailbox afe -ContentFilter {(Received -lt 10/20/2015 11:39:48) -and (Received -gt 10/20/2014 11:39:48)} -FilePath \\dkhqBackup04\Exchange-PST-Export$\afe Archive Year0-Year1.pst -IsArchive -confirm:$false
+10/20/2015 11:39:50: New-MailboxExportRequest -Mailbox afe -ContentFilter {(Received -lt 10/20/2014 11:39:48) -and (Received -gt 10/20/2013 11:39:48)} -FilePath \\dkhqBackup04\Exchange-PST-Export$\afe Archive Year1-Year2.pst -IsArchive -confirm:$false
+10/20/2015 11:39:50: New-MailboxExportRequest -Mailbox afe -ContentFilter {(Received -lt 10/20/2013 11:39:48) -and (Received -gt 10/20/2012 11:39:48)} -FilePath \\dkhqBackup04\Exchange-PST-Export$\afe Archive Year2-Year3.pst -IsArchive -confirm:$false
+10/20/2015 11:39:51: New-MailboxExportRequest -Mailbox afe -ContentFilter {(Received -lt 10/20/2012 11:39:48) -and (Received -gt 10/20/2011 11:39:48)} -FilePath \\dkhqBackup04\Exchange-PST-Export$\afe Archive Year3-Year4.pst -IsArchive -confirm:$false
+10/20/2015 11:39:51: New-MailboxExportRequest -Mailbox afe -ContentFilter {Received -lt 10/20/2011 11:39:48} -FilePath \\dkhqBackup04\Exchange-PST-Export$\afe Archive Year4-YearX.pst -IsArchive -confirm:$false
+10/20/2015 11:39:51: Cleaning up MailboxExport with status Completed
+10/20/2015 11:39:51: Get-MailboxExportRequest MailboxExport | Remove-MailboxExportRequest -Confirm:$false
+10/20/2015 11:39:57: Cleaning up MailboxExport1 with status Completed
+10/20/2015 11:39:57: Get-MailboxExportRequest MailboxExport1 | Remove-MailboxExportRequest -Confirm:$false

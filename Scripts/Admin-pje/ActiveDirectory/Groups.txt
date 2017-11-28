@@ -1,0 +1,17 @@
+Admin-AESA IT Specialists
+Admin-Global Service Desk
+Admin-USSA IT Specialists
+Admin-CNFAC IT-Specialists
+Admin-Global Production IT Backup
+Admin-CNSA IT Coordinators
+Admin-DKHQ HELPDESK
+Admin-DKHQ SAP Hotline
+Admin-DKHQ SAPBasis
+Admin-IDFAC IT-Specialists
+Admin-IDFAC IT-Operational
+Admin-IDFAC IT Coordinators
+Admin-IDFAC Helpdesk
+SEC-KTT Antara Server Admins
+Admin-PTFAC IT Specialists
+Admin-SKFAC IT-Specialists
+Admin-THFAC IT-Specialists

@@ -1,0 +1,7 @@
+http://dkhqscorch01.prd.eccocorp.net:81/Orchestrator2012/Orchestrator.svc/
+http://dkhqscorch01.prd.eccocorp.net:81/Orchestrator2012/Orchestrator.svc/Runbooks
+http://dkhqscorch01.prd.eccocorp.net:81/Orchestrator2012/Orchestrator.svc/Runbooks(guid'4b957957-bb87-4710-84bc-1ad591ecb793')/Name
+http://dkhqscorch01.prd.eccocorp.net:81/Orchestrator2012/Orchestrator.svc/Runbooks(guid'4b957957-bb87-4710-84bc-1ad591ecb793')/Parameters
+http://dkhqscorch01.prd.eccocorp.net:81/Orchestrator2012/Orchestrator.svc/Runbooks?$filter=Name eq 'USMTTest'
+http://dkhqscorch01.prd.eccocorp.net:81/Orchestrator2012/Orchestrator.svc/Runbooks?$filter=IsMonitor eq true
+http://dkhqscorch01.prd.eccocorp.net:81/Orchestrator2012/Orchestrator.svc/Runbooks?$filter=CreationTime gt datetime'2015-08-01'&$orderby=Name

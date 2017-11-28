@@ -1,0 +1,39 @@
+------------------------------------------------------------------------------------------------------------
+Created Session on dkhqvmtst02.prd.eccocorp.net with Session Id 16
+Imported module Hyper-V in [PSSession]Session16
+Created New Dynamic Harddrive: 
+VHDSize: [60GB]
+VHDPath: [C:\ClusterStorage\SRVRM02_SAN04_VMTST02_CSVFS_01\VHDBuild2012\VHDBuild2012.vhd]
+
+Created New Virtual Machine: 
+Virtual Machine Name: [VHDBuild2012]
+Memory: [1GB]
+SmartPagingFilePath: [C:\ClusterStorage\SRVRM02_SAN04_VMTST02_CSVFS_01\VHDBuild2012]
+SnapshotFileLocation: [C:\ClusterStorage\SRVRM02_SAN04_VMTST02_CSVFS_01\VHDBuild2012]
+Static Mac Address: [00154D010101]
+NetworkAdapter connected to: [vSwitch0]
+NetworkAdapter VLAN Id: [1]
+------------------------------------------------------------------------------------------------------------
+Created Session on dkhqvmtst02.prd.eccocorp.net with Session Id 19
+Imported module Hyper-V in [PSSession]Session19
+Created New Dynamic Harddrive: 
+VHDSize: [60GB]
+VHDPath: [C:\ClusterStorage\SRVRM02_SAN04_VMTST02_CSVFS_01\VHDBuild2012\VHDBuild2012.vhd]
+
+Created New Virtual Machine: 
+Virtual Machine Name: [VHDBuild2012]
+Memory: [4GB]
+SmartPagingFilePath: [C:\ClusterStorage\SRVRM02_SAN04_VMTST02_CSVFS_01\VHDBuild2012]
+SnapshotFileLocation: [C:\ClusterStorage\SRVRM02_SAN04_VMTST02_CSVFS_01\VHDBuild2012]
+Static Mac Address: [00154D010101]
+NetworkAdapter connected to: [vSwitch0]
+NetworkAdapter VLAN Id: [1]
+------------------------------------------------------------------------------------------------------------
+Created Session on dkhqvmtst02.prd.eccocorp.net with Session Id 5 and Session name HyperV
+No more VM's to monitor - Finalizing script
+Session HyperV removed - Script Finished
+--------------------------------------------------Monitor---------------------------------------------------
+Created Session on dkhqvmtst02.prd.eccocorp.net with Session Id 6 and Session name HyperV
+Monitoring VM VHDBuild2012
+No more VM's to monitor - Finalizing script
+Session HyperV removed - Script Finished

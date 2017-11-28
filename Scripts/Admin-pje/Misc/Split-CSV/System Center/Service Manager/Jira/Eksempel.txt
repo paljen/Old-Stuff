@@ -1,0 +1,37 @@
+
+<CSVImportFormat>
+	<Class Type="Microsoft.WorkItem.Incident">
+		<Property ID="Id"/>
+		<Property ID="Urgency"/>
+		<Property ID="Impact"/>
+		<Property ID="Source"/>
+		<Property ID="Status"/>
+		<Property ID="TierQueue"/>
+		<Property ID="Classification"/>
+		<Property ID="Title"/>
+		<Property ID="Description"/>
+		<Property ID="ContactMethod"/>
+		<Property ID="CreatedDate"/>
+		<Property ID="DisplayName"/>
+		<Property ID="ResolvedDate"/>
+	</Class>
+</CSVImportFormat>
+
+
+
+
+Id IR2 
+Urgency System.WorkItem.TroubleTicket.UrgencyEnum.High 
+Impact System.WorkItem.TroubleTicket.ImpactEnum.High 
+Source IncidentSourceEnum.Phone 
+Status IncidentStatusEnum.Active 
+TierQueue IncidentTierQueuesEnum.Tier1 
+Classification IncidentClassificationEnum.Email 
+Title Unable to send email 
+Description Email stuck in Microsoft Outlook client 
+ContactMethod E-Mail 
+CreatedDate 
+1/5/2013 6:00 
+ 
+Displayname Unable to send email 
+ResolvedDate 

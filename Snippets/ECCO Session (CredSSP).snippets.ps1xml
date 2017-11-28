@@ -1,0 +1,26 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+    <Snippets  xmlns='http://schemas.microsoft.com/PowerShell/Snippets'>
+        <Snippet Version='1.0.0'>
+            <Header>
+                <Title>ECCO Session (CredSSP)</Title>
+                <Description>Session with CredSSP</Description>
+                <Author>Palle Jensen</Author>
+                <SnippetTypes>
+                    <SnippetType>Expansion</SnippetType>
+                </SnippetTypes>
+            </Header>
+
+            <Code>
+                <Script Language='PowerShell' CaretOffset='0'>
+                    <![CDATA[
+# Create session using CredSSP with indirect remoting, number of hubs -gt 1. ex. remoting from comp1 to comp3 via comp2
+# This approach requires that the machines are configured to allow delegate credentials, test with Get-WSManCredSSP and set with Set-WSManCredSSP
+
+$session = New-PSSession -Name "<SessionName>" -ComputerName "<RemoteHost>" -Credential $cred -Authentication CredSSP
+]]>
+                </Script>
+            </Code>
+
+    </Snippet>
+</Snippets>
+

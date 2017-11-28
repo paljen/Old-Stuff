@@ -1,0 +1,28 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+    <Snippets  xmlns='http://schemas.microsoft.com/PowerShell/Snippets'>
+        <Snippet Version='1.0.0'>
+            <Header>
+                <Title>ECCO Object (String based - Selected)</Title>
+                <Description>Custom object, simple string</Description>
+                <Author>Palle Jensen</Author>
+                <SnippetTypes>
+                    <SnippetType>Expansion</SnippetType>
+                </SnippetTypes>
+            </Header>
+
+            <Code>
+                <Script Language='PowerShell' CaretOffset='0'>
+                    <![CDATA[
+$newObj = "" | select "Property1","Property2"
+$newObj.Property1 = "Value1"
+$newObj.Property2 = "Value2"
+
+$myObj = get-service bits | select name, priority
+$myObj.priority = "high"
+]]>
+                </Script>
+            </Code>
+
+    </Snippet>
+</Snippets>
+

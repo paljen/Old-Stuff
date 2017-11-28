@@ -1,0 +1,3 @@
+DKHQPLMTEMP02.prd.eccocorp.net
+DKHQRDS02N02.prd.eccocorp.net
+DKHQSAPADS11.prd.eccocorp.net

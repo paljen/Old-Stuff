@@ -1,0 +1,4 @@
+#TYPE Selected.Microsoft.ActiveDirectory.Management.ADUser
+"UserPrincipalName"
+"PJE@ecco.com"
+"KSK@ecco.com"

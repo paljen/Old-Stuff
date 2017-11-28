@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Instruction AppVendor="ECCO" AppName="DirectAccess Migrations Script" AppVersion="1.0" AppLanguage="ENU" Author="Kristian F. Thomsen, edgemo a/s" AuthorEmail="kft@edgemo.com" LastChangeDate="8/28/2015 11:12:26 AM" PackageVersion="1.0">
+  <Globals />
+  <Execution>
+    <Jobs>
+      <Job Name="Install" ExecutionContext="SYSTEM">
+        <Group Name="Install" Enabled="True" ContinueOnError="False" Guid="47535812-f300-4b54-9fbe-405dbc71a620">
+          <Function Name="ExecuteCommandLine" ReturnVariable="ExecuteCommandLine" FriendlyText="Install ECCO DirectAccess Migrations Script 1.0 ENU" ContinueOnError="False" Enabled="True" Guid="c96ecbf7-252f-4555-b8b4-ed1e6c1101e6">
+            <Parameter Name="Executable" Value="powershell.exe" />
+            <Parameter Name="Parameters" Value="-file $MEDIAFOLDER\Set-DAGroup.ps1" />
+            <Parameter Name="DoWait" Value="True" />
+          </Function>
+        </Group>
+      </Job>
+    </Jobs>
+  </Execution>
+</Instruction>

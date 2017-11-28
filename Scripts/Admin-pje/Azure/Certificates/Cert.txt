@@ -1,0 +1,1 @@
+makecert -sky exchange -r -n "CN=AzureSubscriptions" -pe -a sha1 -len 2048 -ss My "AzureSubscriptions.cer"

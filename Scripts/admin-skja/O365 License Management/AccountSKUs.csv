@@ -1,0 +1,15 @@
+AccountSKUid;FriendlyName
+ecco:STANDARDPACK;E1
+ecco:ENTERPRISEPACK;E3
+ecco:ENTERPRISEWITHSCAL;E4
+ecco:ENTERPRISEPREMIUM_NOPSTNCONF;E5
+ecco:EXCHANGESTANDARD;Exchange Online Plan 1
+ecco:EXCHANGEARCHIVE;Exchange Online Archiving
+ecco:VISIOCLIENT;Visio Pro
+ecco:PROJECTCLIENT;Project Pro
+ecco:POWER_BI_STANDARD;Power BI Free
+ecco:ECAL_SERVICES;ECAL Services
+ecco:MCOMEETADV;PSTN Conferencing
+ecco:INTUNE_A_VL;Intune
+ecco:AAD_PREMIUM;Azure AD Premium
+ecco:GLOBAL_SERVICE_MONITOR;Global Service Monitor

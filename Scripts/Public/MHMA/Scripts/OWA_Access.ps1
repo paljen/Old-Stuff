@@ -1,0 +1,1 @@
+Import-Csv [PATH]ADuser.csv | foreach-object {Add-ADGroupMember -Identity 'SEC-Global Allow OWA Access' -Member $_.user}

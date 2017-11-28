@@ -1,0 +1,9 @@
+func_[verb]-[noun]_Version
+
+ex. 	Get-DistributionGroupMembers.ps1 # Script
+	Get-ComputerNames.ps1 # Script
+	func_Get-DistributionGroupMembers.ps1 #function
+
+Use Version to follow changes
+
+ex. func_Get-DistributionGroupMembers_2.ps1 #function version 2

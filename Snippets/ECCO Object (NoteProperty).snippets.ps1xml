@@ -1,0 +1,26 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+    <Snippets  xmlns='http://schemas.microsoft.com/PowerShell/Snippets'>
+        <Snippet Version='1.0.0'>
+            <Header>
+                <Title>ECCO Object (NoteProperty)</Title>
+                <Description>Standard custom object</Description>
+                <Author>Palle Jensen</Author>
+                <SnippetTypes>
+                    <SnippetType>Expansion</SnippetType>
+                </SnippetTypes>
+            </Header>
+
+            <Code>
+                <Script Language='PowerShell' CaretOffset='0'>
+                    <![CDATA[
+$newObj = New-Object PSObject
+$newObj | Add-Member -Type NoteProperty -Name FirstName -Value "Mike"
+$newObj | Add-Member -Type NoteProperty -Name LastName -Value "Tyson"
+$newObj | Add-Member -Type NoteProperty -Name Mobile -Value 01010101
+]]>
+                </Script>
+            </Code>
+
+    </Snippet>
+</Snippets>
+

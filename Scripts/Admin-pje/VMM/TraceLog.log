@@ -1,0 +1,11 @@
+10/22/2015 09:22:21: Cleaning up VHDBuild2012 with status Off
+10/22/2015 09:22:21: Copy-VHD -VMName vhdbuild2012
+10/22/2015 09:27:42: Cleaning up VHDBuild2012 with status Off
+10/22/2015 09:27:42: Copy-VHD -VMName VHDBuild2012 -Target  -Destination C:\Temp
+10/22/2015 09:28:41: Cleaning up VHDBuild2012 with status Off
+10/22/2015 09:28:42: Copy-VHD -VMName VHDBuild2012 -Target System.Management.Automation.PSRemotingJob -Destination C:\Temp
+10/22/2015 09:30:54: Cleaning up VHDBuild2012 with status Off
+10/22/2015 09:30:54: Copy-VHD -VMName VHDBuild2012 -Destination C:\Temp
+10/22/2015 09:33:29: Cleaning up VHDBuild2012 with status Off
+10/22/2015 09:33:29: Copy-VHD -VMName VHDBuild2012 -Destination C:\Temp
+10/22/2015 09:37:26: Exception caught during action []: A parameter is invalid. Hyper-V was unable to find a virtual machine with name VHDBuild2012.

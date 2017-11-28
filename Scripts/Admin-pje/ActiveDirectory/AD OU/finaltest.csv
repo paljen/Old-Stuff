@@ -1,0 +1,9 @@
+Name,OU,Description
+ECCO Services,,
+Technical Services,"OU=ECCO Services",
+Database Hotel,"OU=Technical Services,OU=ECCO Services",Servers not related to specific business services
+Backup,"OU=Technical Services,OU=ECCO Services",Servers related to backup services - DPM, Veeam
+DHCP,"OU=Technical Services,OU=ECCO Services",Servers related to DHCP services
+File,"OU=Technical Services,OU=ECCO Services",Servers related to file services
+Web Hotel,"OU=Technical Services,OU=ECCO Services",Servers related to hosting websites
+Multi Purpose,"OU=Technical Services,OU=ECCO Services",Servers wich contains multiple services of type: DHCP, File and Print etc.

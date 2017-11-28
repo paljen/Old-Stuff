@@ -1,0 +1,100 @@
+10/20/2015 11:13:45: ------------------------------------------------------------------------------------------------------------
+10/20/2015 11:13:45: Running as user [PRD\Admin-PJE] on host [DK4836]
+10/20/2015 11:13:45: Executing commands in order..
+10/20/2015 11:13:45: New-PSSession -ComputerName dkhqvmtst02.prd.eccocorp.net -ErrorAction Stop
+10/20/2015 11:13:45: Invoke-Command –Session [PSSession]Session16 -ArgumentList Hyper-V {param(Hyper-V);Import-Module -Name Hyper-V}
+10/20/2015 11:13:45: New-VHD -Path C:\ClusterStorage\SRVRM02_SAN04_VMTST02_CSVFS_01\VHDBuild2012\VHDBuild2012.vhd -Dynamic -SizeBytes 64424509440
+10/20/2015 11:13:46: New-VM -Name VHDBuild2012 -VHDPath C:\ClusterStorage\SRVRM02_SAN04_VMTST02_CSVFS_01\VHDBuild2012\VHDBuild2012.vhd –MemoryStartupBytes 1073741824 -BootDevice LegacyNetworkAdapter
+10/20/2015 11:13:48: Get-VM -Name VHDBuild2012 | Set-VM -SmartPagingFilePath C:\ClusterStorage\SRVRM02_SAN04_VMTST02_CSVFS_01\VHDBuild2012 -SnapshotFileLocation C:\ClusterStorage\SRVRM02_SAN04_VMTST02_CSVFS_01\VHDBuild2012
+10/20/2015 11:13:49: Get-VMNetworkAdapter -VMName VHDBuild2012 | Remove-VMNetworkAdapter
+10/20/2015 11:13:49: Get-VM -VMName VHDBuild2012 | Add-VMNetworkAdapter -IsLegacy True
+10/20/2015 11:13:49: Get-VMNetworkAdapter -VMName VHDBuild2012 | Set-VMNetworkAdapter -StaticMacAddress 00154D010101
+10/20/2015 11:13:49: Get-VMNetworkAdapter -VMName VHDBuild2012 | Connect-VMNetworkAdapter –SwitchName vSwitch0
+10/20/2015 11:13:49: Get-VMNetworkAdapter -VMName VHDBuild2012 | Set-VMNetworkAdapterVlan –Access –VlanId 1
+10/20/2015 11:44:50: ------------------------------------------------------------------------------------------------------------
+10/20/2015 11:44:50: Running as user [PRD\Admin-PJE] on host [DK4836]
+10/20/2015 11:44:50: Executing commands in order..
+10/20/2015 11:44:50: New-PSSession -ComputerName dkhqvmtst02.prd.eccocorp.net -ErrorAction Stop
+10/20/2015 11:44:50: Invoke-Command –Session [PSSession]Session19 -ArgumentList Hyper-V {param(Hyper-V);Import-Module -Name Hyper-V}
+10/20/2015 11:44:51: New-VHD -Path C:\ClusterStorage\SRVRM02_SAN04_VMTST02_CSVFS_01\VHDBuild2012\VHDBuild2012.vhd -Dynamic -SizeBytes 64424509440
+10/20/2015 11:44:52: New-VM -Name VHDBuild2012 -VHDPath C:\ClusterStorage\SRVRM02_SAN04_VMTST02_CSVFS_01\VHDBuild2012\VHDBuild2012.vhd –MemoryStartupBytes 4294967296 -BootDevice LegacyNetworkAdapter
+10/20/2015 11:44:54: Get-VM -Name VHDBuild2012 | Set-VM -SmartPagingFilePath C:\ClusterStorage\SRVRM02_SAN04_VMTST02_CSVFS_01\VHDBuild2012 -SnapshotFileLocation C:\ClusterStorage\SRVRM02_SAN04_VMTST02_CSVFS_01\VHDBuild2012
+10/20/2015 11:44:54: Get-VMNetworkAdapter -VMName VHDBuild2012 | Remove-VMNetworkAdapter
+10/20/2015 11:44:54: Get-VM -VMName VHDBuild2012 | Add-VMNetworkAdapter -IsLegacy True
+10/20/2015 11:44:54: Get-VMNetworkAdapter -VMName VHDBuild2012 | Set-VMNetworkAdapter -StaticMacAddress 00154D010101
+10/20/2015 11:44:55: Get-VMNetworkAdapter -VMName VHDBuild2012 | Connect-VMNetworkAdapter –SwitchName vSwitch0
+10/20/2015 11:44:55: Get-VMNetworkAdapter -VMName VHDBuild2012 | Set-VMNetworkAdapterVlan –Access –VlanId 1
+10/22/2015 09:39:20: Exception caught: A parameter is invalid. Hyper-V was unable to find a virtual machine with name VHDBuild2012.
+10/22/2015 09:42:33: Monitor-VM -VMName VHDBuild2012 -SessionName HyperV -ErrorAction Stop
+10/22/2015 09:42:33: Exception caught: A parameter is invalid. Hyper-V was unable to find a virtual machine with name VHDBuild2012.
+10/22/2015 09:44:00: New-PSSession -Name HyperV -ComputerName dkhqvmtst02.prd.eccocorp.net -ErrorAction Stop
+10/22/2015 09:44:01: Monitor-VM -VMName VHDBuild2012 -SessionName HyperV -ErrorAction Stop
+10/22/2015 09:44:01: Get-PSSession | ?{$_.Name -like HyperV*} | Remove-PSSession
+10/22/2015 09:44:09: New-PSSession -Name HyperV -ComputerName dkhqvmtst02.prd.eccocorp.net -ErrorAction Stop
+10/22/2015 09:44:09: Monitor-VM -VMName VHDBuild2012 -SessionName HyperV -ErrorAction Stop
+10/22/2015 09:44:10: Exception caught: A parameter is invalid. Hyper-V was unable to find a virtual machine with name VHDBuild2012.
+10/22/2015 10:20:05: New-PSSession -Name HyperV -ComputerName dkhqvmtst02.prd.eccocorp.net -ErrorAction Stop
+10/22/2015 10:20:06: Monitor-VM -VMName VHDBuild2012 -SessionName HyperV -ErrorAction Stop
+10/22/2015 10:20:06: Get-VM -VMName VHDBuild2012 | ?{$_.state -eq 'Off'}
+10/22/2015 10:20:07: Cleaning up VHDBuild2012 with status Off
+10/22/2015 10:20:07: Copy-VHD -VMName VHDBuild2012 -Destination C:\Temp
+10/22/2015 10:20:07: Get-VM -VMName VHDBuild2012 | Remove-VM -Confirm:$false
+10/22/2015 10:20:44: Get-PSSession | ?{$_.Name -like HyperV*} | Remove-PSSession
+10/22/2015 10:38:36: New-PSSession -Name HyperV -ComputerName dkhqvmtst02.prd.eccocorp.net -ErrorAction Stop
+10/22/2015 10:38:36: Monitor-VM -VMName VHDBuild2012 -SessionName HyperV -ErrorAction Stop
+10/22/2015 10:38:36: Get-VM -VMName VHDBuild2012 | ?{$_.state -eq 'Off'}
+10/22/2015 10:38:47: Get-VM -VMName VHDBuild2012 | ?{$_.state -eq 'Off'}
+10/22/2015 10:38:47: Cleaning up VHDBuild2012 with status Off
+10/22/2015 10:38:47: Copy-VHD -VMName VHDBuild2012 -Target C:\Temp -Destination C:\Temp\Backup
+10/22/2015 10:38:48: Copy-VHD -VMName VHDBuild2012 -Destination C:\Temp
+10/22/2015 10:38:48: Get-VM -VMName VHDBuild2012 | Remove-VM -Confirm:$false
+10/22/2015 10:39:17: Get-PSSession | ?{$_.Name -like HyperV*} | Remove-PSSession
+10/22/2015 10:42:52: New-PSSession -Name HyperV -ComputerName dkhqvmtst02.prd.eccocorp.net -ErrorAction Stop
+10/22/2015 10:42:55: Monitor-VM -VMName VHDBuild2012 -SessionName HyperV -ErrorAction Stop
+10/22/2015 10:42:55: Get-VM -VMName VHDBuild2012 | ?{$_.state -eq 'Off'}
+10/22/2015 10:43:05: Get-VM -VMName VHDBuild2012 | ?{$_.state -eq 'Off'}
+10/22/2015 10:43:06: Cleaning up VHDBuild2012 with status Off
+10/22/2015 10:43:06: Copy-VHD -VMName VHDBuild2012 -Target C:\Temp -Destination C:\Temp\Backup
+10/22/2015 10:43:06: Copy-VHD -VMName VHDBuild2012 -Destination C:\Temp
+10/22/2015 10:43:16: Get-PSSession | ?{$_.Name -like HyperV*} | Remove-PSSession
+10/22/2015 10:46:22: New-PSSession -Name HyperV -ComputerName dkhqvmtst02.prd.eccocorp.net -ErrorAction Stop
+10/22/2015 10:46:22: Monitor-VM -VMName VHDBuild2012 -SessionName HyperV -ErrorAction Stop
+10/22/2015 10:46:22: Get-VM -VMName VHDBuild2012 | ?{$_.state -eq 'Off'}
+10/22/2015 10:46:23: Cleaning up VHDBuild2012 with status Off
+10/22/2015 10:46:23: Copy-VHD -VMName VHDBuild2012 -Target C:\Temp -Destination C:\Temp\Backup
+10/22/2015 10:46:23: Copy-VHD -VMName VHDBuild2012 -Destination C:\Temp
+10/22/2015 10:46:34: Get-PSSession | ?{$_.Name -like HyperV*} | Remove-PSSession
+10/22/2015 10:46:39: New-PSSession -Name HyperV -ComputerName dkhqvmtst02.prd.eccocorp.net -ErrorAction Stop
+10/22/2015 10:46:39: Monitor-VM -VMName VHDBuild2012 -SessionName HyperV -ErrorAction Stop
+10/22/2015 10:46:39: Get-VM -VMName VHDBuild2012 | ?{$_.state -eq 'Off'}
+10/22/2015 10:46:40: Cleaning up VHDBuild2012 with status Off
+10/22/2015 10:46:40: Copy-VHD -VMName VHDBuild2012 -Target C:\Temp -Destination C:\Temp\Backup
+10/22/2015 10:46:41: Copy-VHD -VMName VHDBuild2012 -Destination C:\Temp
+10/22/2015 10:46:51: Get-PSSession | ?{$_.Name -like HyperV*} | Remove-PSSession
+10/22/2015 10:47:43: New-PSSession -Name HyperV -ComputerName dkhqvmtst02.prd.eccocorp.net -ErrorAction Stop
+10/22/2015 10:47:43: Monitor-VM -VMName VHDBuild2012 -SessionName HyperV -ErrorAction Stop
+10/22/2015 10:47:43: Get-VM -VMName VHDBuild2012 | ?{$_.state -eq 'Off'}
+10/22/2015 10:47:45: Cleaning up VHDBuild2012 with status Off
+10/22/2015 10:47:45: Copy-VHD -VMName VHDBuild2012 -Target C:\Temp -Destination C:\Temp\Backup
+10/22/2015 10:47:45: Copy-VHD -VMName VHDBuild2012 -Destination C:\Temp
+10/22/2015 10:47:55: Get-PSSession | ?{$_.Name -like HyperV*} | Remove-PSSession
+10/22/2015 10:59:17: ------------------------------------------------------------------------------------------------------------
+10/22/2015 10:59:17: Running as user [PRD\Admin-PJE] on host [DK4836]
+10/22/2015 10:59:17: Executing commands in order..
+10/22/2015 10:59:17: New-PSSession -Name HyperV -ComputerName dkhqvmtst02.prd.eccocorp.net -ErrorAction Stop
+10/22/2015 10:59:18: Monitor-VM -VMName VHDBuild2012 -SessionName HyperV -ErrorAction Stop
+10/22/2015 10:59:18: Get-VM -VMName VHDBuild2012 | ?{$_.state -eq 'Off'}
+10/22/2015 10:59:19: Cleaning up VHDBuild2012 with status Off
+10/22/2015 10:59:19: Copy-VHD -VMName VHDBuild2012 -Target C:\Temp -Destination C:\Temp\Backup
+10/22/2015 10:59:19: Copy-VHD -VMName VHDBuild2012 -Destination C:\Temp
+10/22/2015 10:59:29: Get-PSSession | ?{$_.Name -like HyperV*} | Remove-PSSession
+10/22/2015 11:05:43: --------------------------------------------------Monitor---------------------------------------------------
+10/22/2015 11:05:43: Running as user [PRD\Admin-PJE] on host [DK4836]
+10/22/2015 11:05:43: Executing commands in order..
+10/22/2015 11:05:43: New-PSSession -Name HyperV -ComputerName dkhqvmtst02.prd.eccocorp.net -ErrorAction Stop
+10/22/2015 11:05:44: Monitor-VM -VMName VHDBuild2012 -SessionName HyperV -ErrorAction Stop
+10/22/2015 11:05:44: Get-VM -VMName VHDBuild2012 | ?{$_.state -eq 'Off'}
+10/22/2015 11:05:45: Cleaning up VHDBuild2012 with status Off
+10/22/2015 11:05:45: Copy-VHD -VMName VHDBuild2012 -Target C:\Temp -Destination C:\Temp\Backup
+10/22/2015 11:05:45: Copy-VHD -VMName VHDBuild2012 -Destination C:\Temp
+10/22/2015 11:05:55: Get-PSSession | ?{$_.Name -like HyperV*} | Remove-PSSession

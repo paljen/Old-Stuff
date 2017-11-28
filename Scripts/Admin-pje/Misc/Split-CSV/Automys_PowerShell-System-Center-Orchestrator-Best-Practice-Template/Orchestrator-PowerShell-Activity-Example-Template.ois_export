@@ -1,0 +1,722 @@
+<ExportData>
+  <Policies>
+    <Folder>
+      <UniqueID>{3019CB2E-E917-4EF2-B3F0-9BE05658C2EB}</UniqueID>
+      <Name>PowerShell Integration</Name>
+      <Policy>
+        <UniqueID datatype="string">{79D17718-47C3-4695-BC67-58FA2EB9060C}</UniqueID>
+        <Name datatype="string">PowerShell Best Practice Example</Name>
+        <ParentID datatype="string">{3019CB2E-E917-4EF2-B3F0-9BE05658C2EB}</ParentID>
+        <CreationTime datatype="date">130716213540000000</CreationTime>
+        <CreatedBy datatype="string"></CreatedBy>
+        <LastModified datatype="date">130716907630000000</LastModified>
+        <LastModifiedBy datatype="string">S-1-5-21-1965641610-867364815-4140263785-1104</LastModifiedBy>
+        <Enabled datatype="bool">FALSE</Enabled>
+        <Flags datatype="null"></Flags>
+        <ASC_UseServiceSecurity datatype="null"></ASC_UseServiceSecurity>
+        <ASC_ThisAccount datatype="null"></ASC_ThisAccount>
+        <ASC_Username datatype="null"></ASC_Username>
+        <ASC_Password datatype="null"></ASC_Password>
+        <HasExtenders datatype="null"></HasExtenders>
+        <Type datatype="null"></Type>
+        <CheckOutUser datatype="null"></CheckOutUser>
+        <CheckOutTime datatype="null"></CheckOutTime>
+        <CheckOutLocation datatype="null"></CheckOutLocation>
+        <Schedule datatype="null"></Schedule>
+        <Deleted datatype="bool">FALSE</Deleted>
+        <Priority datatype="null"></Priority>
+        <CostDollar datatype="null"></CostDollar>
+        <SavingsDollar datatype="null"></SavingsDollar>
+        <CostTime datatype="null"></CostTime>
+        <SavingsTime datatype="null"></SavingsTime>
+        <Published datatype="bool">FALSE</Published>
+        <PublishingTime datatype="date">130716908120000000</PublishingTime>
+        <ActionServer datatype="null"></ActionServer>
+        <UsePreferredServers datatype="bool">FALSE</UsePreferredServers>
+        <LogCommonData datatype="bool">FALSE</LogCommonData>
+        <LogSpecificData datatype="bool">TRUE</LogSpecificData>
+        <Description datatype="null"></Description>
+        <PolicyTimeout datatype="null"></PolicyTimeout>
+        <NotifyOnFail datatype="bool">FALSE</NotifyOnFail>
+        <MaxParallelRequests datatype="int">1</MaxParallelRequests>
+        <RunInPipelineMode datatype="bool">TRUE</RunInPipelineMode>
+        <ReturnDataDefinition datatype="string">&lt;Data&gt;&lt;Entry&gt;&lt;Description&gt;A string indicating overall result of the runbook, e.g "Success" or "Failed"&lt;/Description&gt;&lt;Name&gt;Runbook Result&lt;/Name&gt;&lt;Type&gt;String&lt;/Type&gt;&lt;Code&gt;RunbookResult&lt;/Code&gt;&lt;/Entry&gt;&lt;/Data&gt;</ReturnDataDefinition>
+        <PreferredServers datatype="string"></PreferredServers>
+        <Object>
+          <UniqueID datatype="string">{3CD81EEC-1275-4231-97D2-40B5E1537B7B}</UniqueID>
+          <ParentID datatype="string">{79D17718-47C3-4695-BC67-58FA2EB9060C}</ParentID>
+          <Name datatype="string">Initialize Data</Name>
+          <Description datatype="null"></Description>
+          <PositionX datatype="int">21</PositionX>
+          <PositionY datatype="int">77</PositionY>
+          <ObjectType datatype="string">{6C576F3D-E927-417A-B145-5D3EFF9C995F}</ObjectType>
+          <SubType datatype="null"></SubType>
+          <Enabled datatype="bool">TRUE</Enabled>
+          <Flags datatype="null"></Flags>
+          <ASC_UseServiceSecurity datatype="null"></ASC_UseServiceSecurity>
+          <ASC_ThisAccount datatype="null"></ASC_ThisAccount>
+          <ASC_Username datatype="null"></ASC_Username>
+          <ASC_Password datatype="null"></ASC_Password>
+          <HasExtenders datatype="null"></HasExtenders>
+          <CreationTime datatype="date">130716220610000000</CreationTime>
+          <CreatedBy datatype="string"></CreatedBy>
+          <LastModified datatype="date">130716907630000000</LastModified>
+          <LastModifiedBy datatype="string">S-1-5-21-1965641610-867364815-4140263785-1104</LastModifiedBy>
+          <Deleted datatype="bool">FALSE</Deleted>
+          <Cost datatype="null"></Cost>
+          <Savings datatype="null"></Savings>
+          <Number datatype="null"></Number>
+          <AlternateDisplayData datatype="null"></AlternateDisplayData>
+          <ASW_ObjectTimeout datatype="null"></ASW_ObjectTimeout>
+          <ASW_NotifyOnFail datatype="bool">FALSE</ASW_NotifyOnFail>
+          <Flatten datatype="bool">FALSE</Flatten>
+          <FlatUseLineBreak datatype="bool">FALSE</FlatUseLineBreak>
+          <FlatUseCSV datatype="bool">FALSE</FlatUseCSV>
+          <FlatUseCustomSep datatype="bool">TRUE</FlatUseCustomSep>
+          <FlatCustomSep datatype="string">,</FlatCustomSep>
+          <ObjectTypeName datatype="string">Custom Start</ObjectTypeName>
+          <CUSTOM_START_PARAMETERS>
+            <Entry>
+              <UniqueID datatype="string">{140BA97F-8DF3-499C-AFA1-047E9A1BCB17}</UniqueID>
+              <ParentID datatype="string">{3CD81EEC-1275-4231-97D2-40B5E1537B7B}</ParentID>
+              <Value datatype="string">Parameter 1</Value>
+              <Type datatype="string">String</Type>
+              <ParameterDescription datatype="null"></ParameterDescription>
+              <GroupID datatype="null"></GroupID>
+            </Entry>
+          </CUSTOM_START_PARAMETERS>
+        </Object>
+        <Object>
+          <UniqueID datatype="string">{FE6E55EE-DBFA-4427-A2E9-CC94585E1B03}</UniqueID>
+          <ParentID datatype="string">{79D17718-47C3-4695-BC67-58FA2EB9060C}</ParentID>
+          <Name datatype="string">Send Event Log Message</Name>
+          <Description datatype="null"></Description>
+          <PositionX datatype="int">246</PositionX>
+          <PositionY datatype="int">227</PositionY>
+          <ObjectType datatype="string">{64F6B908-70F3-46C0-BEB1-79E788C99421}</ObjectType>
+          <SubType datatype="null"></SubType>
+          <Enabled datatype="bool">TRUE</Enabled>
+          <Flags datatype="null"></Flags>
+          <ASC_UseServiceSecurity datatype="bool">TRUE</ASC_UseServiceSecurity>
+          <ASC_ThisAccount datatype="bool">FALSE</ASC_ThisAccount>
+          <ASC_Username datatype="null"></ASC_Username>
+          <ASC_Password datatype="null"></ASC_Password>
+          <HasExtenders datatype="null"></HasExtenders>
+          <CreationTime datatype="date">130716782740000000</CreationTime>
+          <CreatedBy datatype="string"></CreatedBy>
+          <LastModified datatype="date">130716907640000000</LastModified>
+          <LastModifiedBy datatype="string">S-1-5-21-1965641610-867364815-4140263785-1104</LastModifiedBy>
+          <Deleted datatype="bool">FALSE</Deleted>
+          <Cost datatype="null"></Cost>
+          <Savings datatype="null"></Savings>
+          <Number datatype="int">1</Number>
+          <AlternateDisplayData datatype="null"></AlternateDisplayData>
+          <ASW_ObjectTimeout datatype="null"></ASW_ObjectTimeout>
+          <ASW_NotifyOnFail datatype="bool">FALSE</ASW_NotifyOnFail>
+          <Flatten datatype="bool">FALSE</Flatten>
+          <FlatUseLineBreak datatype="bool">FALSE</FlatUseLineBreak>
+          <FlatUseCSV datatype="bool">FALSE</FlatUseCSV>
+          <FlatUseCustomSep datatype="bool">TRUE</FlatUseCustomSep>
+          <FlatCustomSep datatype="string">,</FlatCustomSep>
+          <ObjectTypeName datatype="string">Send Event Log Message</ObjectTypeName>
+          <ComputerName datatype="null"></ComputerName>
+          <MessageText datatype="string">Error occurred in PowerShell script execution in runbook [\`d.T.~Ed/{9E6D0626-44C9-4B73-9D05-4FF287A0960C}.Policy.Name\`d.T.~Ed/]. Available details are provided below.
+
+Error summary from activity: [\`d.T.~Ed/{9E6D0626-44C9-4B73-9D05-4FF287A0960C}.ErrorSummary.Text\`d.T.~Ed/]
+
+Error message from script: [\`d.T.~Ed/{9E6D0626-44C9-4B73-9D05-4FF287A0960C}.Error Message\`d.T.~Ed/]
+
+Trace log: 
+
+\`d.T.~Ed/{9E6D0626-44C9-4B73-9D05-4FF287A0960C}.Trace Log\`d.T.~Ed/</MessageText>
+          <Severity datatype="int">2</Severity>
+        </Object>
+        <Object>
+          <UniqueID datatype="string">{9E6D0626-44C9-4B73-9D05-4FF287A0960C}</UniqueID>
+          <ParentID datatype="string">{79D17718-47C3-4695-BC67-58FA2EB9060C}</ParentID>
+          <Name datatype="string">Run .Net Script - PowerShell</Name>
+          <Description datatype="null"></Description>
+          <PositionX datatype="int">96</PositionX>
+          <PositionY datatype="int">77</PositionY>
+          <ObjectType datatype="string">{ED7F2A41-107A-4B74-BAFE-ADAE63632B79}</ObjectType>
+          <SubType datatype="null"></SubType>
+          <Enabled datatype="bool">TRUE</Enabled>
+          <Flags datatype="null"></Flags>
+          <ASC_UseServiceSecurity datatype="null"></ASC_UseServiceSecurity>
+          <ASC_ThisAccount datatype="null"></ASC_ThisAccount>
+          <ASC_Username datatype="null"></ASC_Username>
+          <ASC_Password datatype="null"></ASC_Password>
+          <HasExtenders datatype="null"></HasExtenders>
+          <CreationTime datatype="date">130716220630000000</CreationTime>
+          <CreatedBy datatype="string"></CreatedBy>
+          <LastModified datatype="date">130716907640000000</LastModified>
+          <LastModifiedBy datatype="string">S-1-5-21-1965641610-867364815-4140263785-1104</LastModifiedBy>
+          <Deleted datatype="bool">FALSE</Deleted>
+          <Cost datatype="null"></Cost>
+          <Savings datatype="null"></Savings>
+          <Number datatype="int">0</Number>
+          <AlternateDisplayData datatype="null"></AlternateDisplayData>
+          <ASW_ObjectTimeout datatype="null"></ASW_ObjectTimeout>
+          <ASW_NotifyOnFail datatype="null"></ASW_NotifyOnFail>
+          <Flatten datatype="bool">FALSE</Flatten>
+          <FlatUseLineBreak datatype="bool">FALSE</FlatUseLineBreak>
+          <FlatUseCSV datatype="bool">FALSE</FlatUseCSV>
+          <FlatUseCustomSep datatype="bool">TRUE</FlatUseCustomSep>
+          <FlatCustomSep datatype="string">,</FlatCustomSep>
+          <ObjectTypeName datatype="string">Run .Net Script</ObjectTypeName>
+          <ScriptType datatype="string">PowerShell</ScriptType>
+          <ScriptBody datatype="string"># Set script parameters from runbook data bus and Orchestrator global variables
+# Define any inputs here and then add to the $argsArray and script block parameters below 
+
+$DataBusInput1 = "\`d.T.~Ed/{3CD81EEC-1275-4231-97D2-40B5E1537B7B}.{140BA97F-8DF3-499C-AFA1-047E9A1BCB17}\`d.T.~Ed/"
+$DataBusInput2 = "\`d.T.~Vb/{BDB8FB1C-2E7F-450C-9860-0897F9BACF03}\`d.T.~Vb/"
+
+
+#-----------------------------------------------------------------------
+
+## Initialize result and trace variables
+# $ResultStatus provides basic success/failed indicator
+# $ErrorMessage captures any error text generated by script
+# $Trace is used to record a running log of actions
+$ResultStatus = ""
+$ErrorMessage = ""
+$Trace = (Get-Date).ToString() + "`t" + "Runbook activity script started" + " `r`n"
+       
+# Create argument array for passing data bus inputs to the external script session
+$argsArray = @()
+$argsArray += $DataBusInput1
+$argsArray += $DataBusInput2
+
+# Establish an external session (to localhost) to ensure 64bit PowerShell runtime using the latest version of PowerShell installed on the runbook server
+# Use this session to perform all work to ensure latest PowerShell features and behavior available
+$Session = New-PSSession -ComputerName localhost
+
+# Invoke-Command used to start the script in the external session. Variables returned by script are then stored in the $ReturnArray variable
+$ReturnArray = Invoke-Command -Session $Session -Argumentlist $argsArray -ScriptBlock {
+    # Define a parameter to accept each data bus input value. Recommend matching names of parameters and data bus input variables above
+    Param(
+        [ValidateNotNullOrEmpty()]
+        [string]$DataBusInput1,
+
+        [ValidateNotNullOrEmpty()]
+        [string]$DataBusInput2
+    )
+
+    # Define function to add entry to trace log variable
+    function AppendLog ([string]$Message)
+    {
+        $script:CurrentAction = $Message
+        $script:TraceLog += ((Get-Date).ToString() + "`t" + $Message + " `r`n")
+    }
+
+    # Set external session trace and status variables to defaults
+    $ResultStatus = ""
+    $ErrorMessage = ""
+    $script:CurrentAction = ""
+    $script:TraceLog = ""
+
+    try 
+    {
+        # Add startup details to trace log
+        AppendLog "Script now executing in external PowerShell version [$($PSVersionTable.PSVersion.ToString())] session in a [$([IntPtr]::Size * 8)] bit process"
+        AppendLog "Running as user [$([Environment]::UserDomainName)\$([Environment]::UserName)] on host [$($env:COMPUTERNAME)]"
+        AppendLog "Parameter values received: DataBusInput1=[$DataBusInput1]; DataBusInput2=[$DataBusInput2]"
+
+        # The actual work the script does goes here
+        AppendLog "Doing first action"
+        # Do-Stuff -Value $DataBusInput1
+
+        AppendLog "Doing second action"
+        # Do-MoreStuff -Value $DataBusInput2
+
+        # Simulate a possible error
+        if($DataBusInput1 -ilike "*bad stuff*")
+        {
+            throw "ERROR: Encountered bad stuff in the parameter input"
+        }
+
+        # Example of custom result value
+        $myCustomVariable = "Something I want to publish back to the runbook data bus"
+
+        # Validate results and set return status
+        AppendLog "Finished work, determining result"
+        $EverythingWorked = $true
+        if($EverythingWorked -eq $true)
+        {
+           $ResultStatus = "Success"
+        }
+        else
+        {
+            $ResultStatus = "Failed"
+        }
+    }
+    catch
+    {
+        # Catch any errors thrown above here, setting the result status and recording the error message to return to the activity for data bus publishing
+        $ResultStatus = "Failed"
+        $ErrorMessage = $error[0].Exception.Message
+        AppendLog "Exception caught during action [$script:CurrentAction]: $ErrorMessage"
+    }
+    finally
+    {
+        # Always do whatever is in the finally block. In this case, adding some additional detail about the outcome to the trace log for return
+        if($ErrorMessage.Length -gt 0)
+        {
+            AppendLog "Exiting external session with result [$ResultStatus] and error message [$ErrorMessage]"
+        }
+        else
+        {
+            AppendLog "Exiting external session with result [$ResultStatus]"
+        }
+        
+    }
+
+    # Return an array of the results. Additional variables like "myCustomVariable" can be returned by adding them onto the array
+    $resultArray = @()
+    $resultArray += $ResultStatus
+    $resultArray += $ErrorMessage
+    $resultArray += $script:TraceLog
+    $resultArray += $myCustomVariable
+    return  $resultArray  
+     
+}#End Invoke-Command
+
+# Get the values returned from script session for publishing to data bus
+$ResultStatus = $ReturnArray[0]
+$ErrorMessage = $ReturnArray[1]
+$Trace += $ReturnArray[2]
+$MyCustomVariable = $ReturnArray[3]
+
+# Record end of activity script process
+$Trace += (Get-Date).ToString() + "`t" + "Script finished" + " `r`n"
+
+# Close the external session
+Remove-PSSession $Session</ScriptBody>
+          <Dependencies datatype="null"></Dependencies>
+          <Namespaces datatype="null"></Namespaces>
+          <ExecutionData datatype="string">&lt;ExecutionData&gt;&lt;Item&gt;&lt;Description&gt;&lt;/Description&gt;&lt;Hint&gt;&lt;/Hint&gt;&lt;ID&gt;Result Status&lt;/ID&gt;&lt;Text&gt;Result Status&lt;/Text&gt;&lt;Type&gt;String&lt;/Type&gt;&lt;/Item&gt;&lt;Item&gt;&lt;Description&gt;&lt;/Description&gt;&lt;Hint&gt;&lt;/Hint&gt;&lt;ID&gt;Error Message&lt;/ID&gt;&lt;Text&gt;Error Message&lt;/Text&gt;&lt;Type&gt;String&lt;/Type&gt;&lt;/Item&gt;&lt;Item&gt;&lt;Description&gt;&lt;/Description&gt;&lt;Hint&gt;&lt;/Hint&gt;&lt;ID&gt;Trace Log&lt;/ID&gt;&lt;Text&gt;Trace Log&lt;/Text&gt;&lt;Type&gt;String&lt;/Type&gt;&lt;/Item&gt;&lt;Item&gt;&lt;Description&gt;&lt;/Description&gt;&lt;Hint&gt;&lt;/Hint&gt;&lt;ID&gt;My Custom Published Data&lt;/ID&gt;&lt;Text&gt;My Custom Published Data&lt;/Text&gt;&lt;Type&gt;String&lt;/Type&gt;&lt;/Item&gt;&lt;Item&gt;&lt;Description&gt;C#&lt;/Description&gt;&lt;Hint&gt;&lt;/Hint&gt;&lt;ID&gt;ScriptType&lt;/ID&gt;&lt;Text&gt;Script Language&lt;/Text&gt;&lt;Type&gt;String&lt;/Type&gt;&lt;/Item&gt;&lt;/ExecutionData&gt;</ExecutionData>
+          <PublishedData datatype="string">&lt;ItemRoot&gt;&lt;Entry&gt;&lt;IsCollection&gt;false&lt;/IsCollection&gt;&lt;Name&gt;Result Status&lt;/Name&gt;&lt;Type&gt;String&lt;/Type&gt;&lt;Variable&gt;ResultStatus&lt;/Variable&gt;&lt;/Entry&gt;&lt;Entry&gt;&lt;IsCollection&gt;false&lt;/IsCollection&gt;&lt;Name&gt;Error Message&lt;/Name&gt;&lt;Type&gt;String&lt;/Type&gt;&lt;Variable&gt;ErrorMessage&lt;/Variable&gt;&lt;/Entry&gt;&lt;Entry&gt;&lt;IsCollection&gt;false&lt;/IsCollection&gt;&lt;Name&gt;Trace Log&lt;/Name&gt;&lt;Type&gt;String&lt;/Type&gt;&lt;Variable&gt;Trace&lt;/Variable&gt;&lt;/Entry&gt;&lt;Entry&gt;&lt;IsCollection&gt;false&lt;/IsCollection&gt;&lt;Name&gt;My Custom Published Data&lt;/Name&gt;&lt;Type&gt;String&lt;/Type&gt;&lt;Variable&gt;MyCustomVariable&lt;/Variable&gt;&lt;/Entry&gt;&lt;/ItemRoot&gt;</PublishedData>
+        </Object>
+        <Object>
+          <UniqueID datatype="string">{45728741-4011-4436-92B7-16AAAC3D01D3}</UniqueID>
+          <ParentID datatype="string">{79D17718-47C3-4695-BC67-58FA2EB9060C}</ParentID>
+          <Name datatype="string">Do Something With Result</Name>
+          <Description datatype="null"></Description>
+          <PositionX datatype="int">246</PositionX>
+          <PositionY datatype="int">77</PositionY>
+          <ObjectType datatype="string">{A1F1D52C-CB88-4C74-848D-D3E62BB22B1C}</ObjectType>
+          <SubType datatype="null"></SubType>
+          <Enabled datatype="bool">TRUE</Enabled>
+          <Flags datatype="null"></Flags>
+          <ASC_UseServiceSecurity datatype="null"></ASC_UseServiceSecurity>
+          <ASC_ThisAccount datatype="null"></ASC_ThisAccount>
+          <ASC_Username datatype="null"></ASC_Username>
+          <ASC_Password datatype="null"></ASC_Password>
+          <HasExtenders datatype="null"></HasExtenders>
+          <CreationTime datatype="date">130716220620000000</CreationTime>
+          <CreatedBy datatype="string"></CreatedBy>
+          <LastModified datatype="date">130716907630000000</LastModified>
+          <LastModifiedBy datatype="string">S-1-5-21-1965641610-867364815-4140263785-1104</LastModifiedBy>
+          <Deleted datatype="bool">FALSE</Deleted>
+          <Cost datatype="null"></Cost>
+          <Savings datatype="null"></Savings>
+          <Number datatype="int">0</Number>
+          <AlternateDisplayData datatype="null"></AlternateDisplayData>
+          <ASW_ObjectTimeout datatype="null"></ASW_ObjectTimeout>
+          <ASW_NotifyOnFail datatype="null"></ASW_NotifyOnFail>
+          <Flatten datatype="bool">FALSE</Flatten>
+          <FlatUseLineBreak datatype="bool">FALSE</FlatUseLineBreak>
+          <FlatUseCSV datatype="bool">FALSE</FlatUseCSV>
+          <FlatUseCustomSep datatype="bool">TRUE</FlatUseCustomSep>
+          <FlatCustomSep datatype="string">,</FlatCustomSep>
+          <ObjectTypeName datatype="string">Append Line</ObjectTypeName>
+          <FileName datatype="string">c:\temp\PowerShellTest.txt</FileName>
+          <Encoding datatype="string">ASCII</Encoding>
+          <Text datatype="string">Ran script with my custom result: \`d.T.~Ed/{9E6D0626-44C9-4B73-9D05-4FF287A0960C}.My Custom Published Data\`d.T.~Ed/</Text>
+        </Object>
+        <Object>
+          <UniqueID datatype="string">{DDCC8D13-2F8E-424B-A426-59D3F5284D3E}</UniqueID>
+          <ParentID datatype="string">{79D17718-47C3-4695-BC67-58FA2EB9060C}</ParentID>
+          <Name datatype="string">Return Failed</Name>
+          <Description datatype="null"></Description>
+          <PositionX datatype="int">321</PositionX>
+          <PositionY datatype="int">227</PositionY>
+          <ObjectType datatype="string">{FA70125F-267E-4065-A4F6-D5493167D663}</ObjectType>
+          <SubType datatype="null"></SubType>
+          <Enabled datatype="bool">TRUE</Enabled>
+          <Flags datatype="null"></Flags>
+          <ASC_UseServiceSecurity datatype="null"></ASC_UseServiceSecurity>
+          <ASC_ThisAccount datatype="null"></ASC_ThisAccount>
+          <ASC_Username datatype="null"></ASC_Username>
+          <ASC_Password datatype="null"></ASC_Password>
+          <HasExtenders datatype="null"></HasExtenders>
+          <CreationTime datatype="date">130716220630000000</CreationTime>
+          <CreatedBy datatype="string"></CreatedBy>
+          <LastModified datatype="date">130716907640000000</LastModified>
+          <LastModifiedBy datatype="string">S-1-5-21-1965641610-867364815-4140263785-1104</LastModifiedBy>
+          <Deleted datatype="bool">FALSE</Deleted>
+          <Cost datatype="null"></Cost>
+          <Savings datatype="null"></Savings>
+          <Number datatype="int">0</Number>
+          <AlternateDisplayData datatype="null"></AlternateDisplayData>
+          <ASW_ObjectTimeout datatype="null"></ASW_ObjectTimeout>
+          <ASW_NotifyOnFail datatype="null"></ASW_NotifyOnFail>
+          <Flatten datatype="bool">FALSE</Flatten>
+          <FlatUseLineBreak datatype="bool">FALSE</FlatUseLineBreak>
+          <FlatUseCSV datatype="bool">FALSE</FlatUseCSV>
+          <FlatUseCustomSep datatype="bool">TRUE</FlatUseCustomSep>
+          <FlatCustomSep datatype="string">,</FlatCustomSep>
+          <ObjectTypeName datatype="string">Publish Policy Data</ObjectTypeName>
+          <PUBLISH_POLICY_DATA>
+            <Entry>
+              <UniqueID datatype="string">{33439B0F-0F3D-4699-A1E8-185265197765}</UniqueID>
+              <ParentID datatype="string">{DDCC8D13-2F8E-424B-A426-59D3F5284D3E}</ParentID>
+              <Key datatype="string">RunbookResult</Key>
+              <Value datatype="string">Failed</Value>
+            </Entry>
+          </PUBLISH_POLICY_DATA>
+        </Object>
+        <Object>
+          <UniqueID datatype="string">{D46A8B99-D210-4810-9170-7176FE01F1D4}</UniqueID>
+          <ParentID datatype="string">{79D17718-47C3-4695-BC67-58FA2EB9060C}</ParentID>
+          <Name datatype="string">Return Success</Name>
+          <Description datatype="null"></Description>
+          <PositionX datatype="int">321</PositionX>
+          <PositionY datatype="int">77</PositionY>
+          <ObjectType datatype="string">{FA70125F-267E-4065-A4F6-D5493167D663}</ObjectType>
+          <SubType datatype="null"></SubType>
+          <Enabled datatype="bool">TRUE</Enabled>
+          <Flags datatype="null"></Flags>
+          <ASC_UseServiceSecurity datatype="null"></ASC_UseServiceSecurity>
+          <ASC_ThisAccount datatype="null"></ASC_ThisAccount>
+          <ASC_Username datatype="null"></ASC_Username>
+          <ASC_Password datatype="null"></ASC_Password>
+          <HasExtenders datatype="null"></HasExtenders>
+          <CreationTime datatype="date">130716220630000000</CreationTime>
+          <CreatedBy datatype="string"></CreatedBy>
+          <LastModified datatype="date">130716907640000000</LastModified>
+          <LastModifiedBy datatype="string">S-1-5-21-1965641610-867364815-4140263785-1104</LastModifiedBy>
+          <Deleted datatype="bool">FALSE</Deleted>
+          <Cost datatype="null"></Cost>
+          <Savings datatype="null"></Savings>
+          <Number datatype="int">0</Number>
+          <AlternateDisplayData datatype="null"></AlternateDisplayData>
+          <ASW_ObjectTimeout datatype="null"></ASW_ObjectTimeout>
+          <ASW_NotifyOnFail datatype="null"></ASW_NotifyOnFail>
+          <Flatten datatype="bool">FALSE</Flatten>
+          <FlatUseLineBreak datatype="bool">FALSE</FlatUseLineBreak>
+          <FlatUseCSV datatype="bool">FALSE</FlatUseCSV>
+          <FlatUseCustomSep datatype="bool">TRUE</FlatUseCustomSep>
+          <FlatCustomSep datatype="string">,</FlatCustomSep>
+          <ObjectTypeName datatype="string">Publish Policy Data</ObjectTypeName>
+          <PUBLISH_POLICY_DATA>
+            <Entry>
+              <UniqueID datatype="string">{DE750ECB-E444-4A8B-BE9A-B388CD38036B}</UniqueID>
+              <ParentID datatype="string">{D46A8B99-D210-4810-9170-7176FE01F1D4}</ParentID>
+              <Key datatype="string">RunbookResult</Key>
+              <Value datatype="string">Success</Value>
+            </Entry>
+          </PUBLISH_POLICY_DATA>
+        </Object>
+        <Object>
+          <UniqueID datatype="string">{EA915D36-744E-478E-8D6F-2E17241A7380}</UniqueID>
+          <ParentID datatype="string">{79D17718-47C3-4695-BC67-58FA2EB9060C}</ParentID>
+          <Name datatype="string">Failed</Name>
+          <Description datatype="null"></Description>
+          <PositionX datatype="null"></PositionX>
+          <PositionY datatype="null"></PositionY>
+          <ObjectType datatype="string">{7A65BD17-9532-4D07-A6DA-E0F89FA0203E}</ObjectType>
+          <SubType datatype="null"></SubType>
+          <Enabled datatype="bool">TRUE</Enabled>
+          <Flags datatype="null"></Flags>
+          <ASC_UseServiceSecurity datatype="null"></ASC_UseServiceSecurity>
+          <ASC_ThisAccount datatype="null"></ASC_ThisAccount>
+          <ASC_Username datatype="null"></ASC_Username>
+          <ASC_Password datatype="null"></ASC_Password>
+          <HasExtenders datatype="null"></HasExtenders>
+          <CreationTime datatype="date">130716220640000000</CreationTime>
+          <CreatedBy datatype="string"></CreatedBy>
+          <LastModified datatype="date">130716907640000000</LastModified>
+          <LastModifiedBy datatype="string">S-1-5-21-1965641610-867364815-4140263785-1104</LastModifiedBy>
+          <Deleted datatype="bool">FALSE</Deleted>
+          <Cost datatype="null"></Cost>
+          <Savings datatype="null"></Savings>
+          <Number datatype="int">0</Number>
+          <AlternateDisplayData datatype="null"></AlternateDisplayData>
+          <ASW_ObjectTimeout datatype="null"></ASW_ObjectTimeout>
+          <ASW_NotifyOnFail datatype="null"></ASW_NotifyOnFail>
+          <Flatten datatype="null"></Flatten>
+          <FlatUseLineBreak datatype="null"></FlatUseLineBreak>
+          <FlatUseCSV datatype="null"></FlatUseCSV>
+          <FlatUseCustomSep datatype="null"></FlatUseCustomSep>
+          <FlatCustomSep datatype="null"></FlatCustomSep>
+          <ObjectTypeName datatype="string">Link</ObjectTypeName>
+          <SourceObject datatype="string">{9E6D0626-44C9-4B73-9D05-4FF287A0960C}</SourceObject>
+          <TargetObject datatype="string">{FE6E55EE-DBFA-4427-A2E9-CC94585E1B03}</TargetObject>
+          <Color datatype="int">255</Color>
+          <WaitDelay datatype="int">0</WaitDelay>
+          <SubPoints datatype="null"></SubPoints>
+          <And datatype="null"></And>
+          <Label datatype="null"></Label>
+          <Width datatype="int">1</Width>
+          <TRIGGERS>
+            <Entry>
+              <UniqueID datatype="string">{8431708F-4E9F-44C6-9DFE-A4F7444FEF56}</UniqueID>
+              <ParentID datatype="string">{EA915D36-744E-478E-8D6F-2E17241A7380}</ParentID>
+              <Type datatype="string">trigger</Type>
+              <Condition datatype="string">doesnotequal</Condition>
+              <Data datatype="string">{9E6D0626-44C9-4B73-9D05-4FF287A0960C}.Result Status</Data>
+              <Value datatype="string">Success</Value>
+              <GroupID datatype="null"></GroupID>
+            </Entry>
+            <Entry>
+              <UniqueID datatype="string">{000C0E4D-A6FB-4B53-86FF-F8F3CB51482D}</UniqueID>
+              <ParentID datatype="string">{EA915D36-744E-478E-8D6F-2E17241A7380}</ParentID>
+              <Type datatype="string">trigger</Type>
+              <Condition datatype="null"></Condition>
+              <Data datatype="string">{9E6D0626-44C9-4B73-9D05-4FF287A0960C}</Data>
+              <Value datatype="string">warning#failed</Value>
+              <GroupID datatype="null"></GroupID>
+            </Entry>
+          </TRIGGERS>
+        </Object>
+        <Object>
+          <UniqueID datatype="string">{6BEB897B-DD4B-4EC7-9BBD-34EFB71D883F}</UniqueID>
+          <ParentID datatype="string">{79D17718-47C3-4695-BC67-58FA2EB9060C}</ParentID>
+          <Name datatype="string">Link</Name>
+          <Description datatype="null"></Description>
+          <PositionX datatype="null"></PositionX>
+          <PositionY datatype="null"></PositionY>
+          <ObjectType datatype="string">{7A65BD17-9532-4D07-A6DA-E0F89FA0203E}</ObjectType>
+          <SubType datatype="null"></SubType>
+          <Enabled datatype="bool">TRUE</Enabled>
+          <Flags datatype="null"></Flags>
+          <ASC_UseServiceSecurity datatype="null"></ASC_UseServiceSecurity>
+          <ASC_ThisAccount datatype="null"></ASC_ThisAccount>
+          <ASC_Username datatype="null"></ASC_Username>
+          <ASC_Password datatype="null"></ASC_Password>
+          <HasExtenders datatype="null"></HasExtenders>
+          <CreationTime datatype="date">130716220620000000</CreationTime>
+          <CreatedBy datatype="string"></CreatedBy>
+          <LastModified datatype="date">130716907640000000</LastModified>
+          <LastModifiedBy datatype="string">S-1-5-21-1965641610-867364815-4140263785-1104</LastModifiedBy>
+          <Deleted datatype="bool">FALSE</Deleted>
+          <Cost datatype="null"></Cost>
+          <Savings datatype="null"></Savings>
+          <Number datatype="int">0</Number>
+          <AlternateDisplayData datatype="null"></AlternateDisplayData>
+          <ASW_ObjectTimeout datatype="null"></ASW_ObjectTimeout>
+          <ASW_NotifyOnFail datatype="null"></ASW_NotifyOnFail>
+          <Flatten datatype="null"></Flatten>
+          <FlatUseLineBreak datatype="null"></FlatUseLineBreak>
+          <FlatUseCSV datatype="null"></FlatUseCSV>
+          <FlatUseCustomSep datatype="null"></FlatUseCustomSep>
+          <FlatCustomSep datatype="null"></FlatCustomSep>
+          <ObjectTypeName datatype="string">Link</ObjectTypeName>
+          <SourceObject datatype="string">{45728741-4011-4436-92B7-16AAAC3D01D3}</SourceObject>
+          <TargetObject datatype="string">{D46A8B99-D210-4810-9170-7176FE01F1D4}</TargetObject>
+          <Color datatype="int">0</Color>
+          <WaitDelay datatype="int">0</WaitDelay>
+          <SubPoints datatype="null"></SubPoints>
+          <And datatype="null"></And>
+          <Label datatype="null"></Label>
+          <Width datatype="int">0</Width>
+        </Object>
+        <Object>
+          <UniqueID datatype="string">{5D2B6391-E866-4121-8FD2-71DD784DB936}</UniqueID>
+          <ParentID datatype="string">{79D17718-47C3-4695-BC67-58FA2EB9060C}</ParentID>
+          <Name datatype="string">Link</Name>
+          <Description datatype="null"></Description>
+          <PositionX datatype="null"></PositionX>
+          <PositionY datatype="null"></PositionY>
+          <ObjectType datatype="string">{7A65BD17-9532-4D07-A6DA-E0F89FA0203E}</ObjectType>
+          <SubType datatype="null"></SubType>
+          <Enabled datatype="bool">TRUE</Enabled>
+          <Flags datatype="null"></Flags>
+          <ASC_UseServiceSecurity datatype="null"></ASC_UseServiceSecurity>
+          <ASC_ThisAccount datatype="null"></ASC_ThisAccount>
+          <ASC_Username datatype="null"></ASC_Username>
+          <ASC_Password datatype="null"></ASC_Password>
+          <HasExtenders datatype="null"></HasExtenders>
+          <CreationTime datatype="date">130716782730000000</CreationTime>
+          <CreatedBy datatype="string"></CreatedBy>
+          <LastModified datatype="date">130716907640000000</LastModified>
+          <LastModifiedBy datatype="string">S-1-5-21-1965641610-867364815-4140263785-1104</LastModifiedBy>
+          <Deleted datatype="bool">FALSE</Deleted>
+          <Cost datatype="null"></Cost>
+          <Savings datatype="null"></Savings>
+          <Number datatype="int">0</Number>
+          <AlternateDisplayData datatype="null"></AlternateDisplayData>
+          <ASW_ObjectTimeout datatype="null"></ASW_ObjectTimeout>
+          <ASW_NotifyOnFail datatype="null"></ASW_NotifyOnFail>
+          <Flatten datatype="null"></Flatten>
+          <FlatUseLineBreak datatype="null"></FlatUseLineBreak>
+          <FlatUseCSV datatype="null"></FlatUseCSV>
+          <FlatUseCustomSep datatype="null"></FlatUseCustomSep>
+          <FlatCustomSep datatype="null"></FlatCustomSep>
+          <ObjectTypeName datatype="string">Link</ObjectTypeName>
+          <SourceObject datatype="string">{FE6E55EE-DBFA-4427-A2E9-CC94585E1B03}</SourceObject>
+          <TargetObject datatype="string">{DDCC8D13-2F8E-424B-A426-59D3F5284D3E}</TargetObject>
+          <Color datatype="int">0</Color>
+          <WaitDelay datatype="int">0</WaitDelay>
+          <SubPoints datatype="null"></SubPoints>
+          <And datatype="null"></And>
+          <Label datatype="null"></Label>
+          <Width datatype="int">0</Width>
+        </Object>
+        <Object>
+          <UniqueID datatype="string">{7B2201E1-2A6A-426E-BBE3-786D1E33B630}</UniqueID>
+          <ParentID datatype="string">{79D17718-47C3-4695-BC67-58FA2EB9060C}</ParentID>
+          <Name datatype="string">Success</Name>
+          <Description datatype="null"></Description>
+          <PositionX datatype="null"></PositionX>
+          <PositionY datatype="null"></PositionY>
+          <ObjectType datatype="string">{7A65BD17-9532-4D07-A6DA-E0F89FA0203E}</ObjectType>
+          <SubType datatype="null"></SubType>
+          <Enabled datatype="bool">TRUE</Enabled>
+          <Flags datatype="null"></Flags>
+          <ASC_UseServiceSecurity datatype="null"></ASC_UseServiceSecurity>
+          <ASC_ThisAccount datatype="null"></ASC_ThisAccount>
+          <ASC_Username datatype="null"></ASC_Username>
+          <ASC_Password datatype="null"></ASC_Password>
+          <HasExtenders datatype="null"></HasExtenders>
+          <CreationTime datatype="date">130716220620000000</CreationTime>
+          <CreatedBy datatype="string"></CreatedBy>
+          <LastModified datatype="date">130716907640000000</LastModified>
+          <LastModifiedBy datatype="string">S-1-5-21-1965641610-867364815-4140263785-1104</LastModifiedBy>
+          <Deleted datatype="bool">FALSE</Deleted>
+          <Cost datatype="null"></Cost>
+          <Savings datatype="null"></Savings>
+          <Number datatype="int">0</Number>
+          <AlternateDisplayData datatype="null"></AlternateDisplayData>
+          <ASW_ObjectTimeout datatype="null"></ASW_ObjectTimeout>
+          <ASW_NotifyOnFail datatype="null"></ASW_NotifyOnFail>
+          <Flatten datatype="null"></Flatten>
+          <FlatUseLineBreak datatype="null"></FlatUseLineBreak>
+          <FlatUseCSV datatype="null"></FlatUseCSV>
+          <FlatUseCustomSep datatype="null"></FlatUseCustomSep>
+          <FlatCustomSep datatype="null"></FlatCustomSep>
+          <ObjectTypeName datatype="string">Link</ObjectTypeName>
+          <SourceObject datatype="string">{9E6D0626-44C9-4B73-9D05-4FF287A0960C}</SourceObject>
+          <TargetObject datatype="string">{45728741-4011-4436-92B7-16AAAC3D01D3}</TargetObject>
+          <Color datatype="int">0</Color>
+          <WaitDelay datatype="int">0</WaitDelay>
+          <SubPoints datatype="null"></SubPoints>
+          <And datatype="null"></And>
+          <Label datatype="null"></Label>
+          <Width datatype="int">1</Width>
+          <TRIGGERS>
+            <Entry>
+              <UniqueID datatype="string">{6AA54A53-D768-43D4-89AC-22B496FDE449}</UniqueID>
+              <ParentID datatype="string">{7B2201E1-2A6A-426E-BBE3-786D1E33B630}</ParentID>
+              <Type datatype="string">donottrigger</Type>
+              <Condition datatype="null"></Condition>
+              <Data datatype="string">{9E6D0626-44C9-4B73-9D05-4FF287A0960C}</Data>
+              <Value datatype="string">warning#failed</Value>
+              <GroupID datatype="null"></GroupID>
+            </Entry>
+            <Entry>
+              <UniqueID datatype="string">{78D8453F-3CFC-4BE5-AE0F-DED19BD01104}</UniqueID>
+              <ParentID datatype="string">{7B2201E1-2A6A-426E-BBE3-786D1E33B630}</ParentID>
+              <Type datatype="string">trigger</Type>
+              <Condition datatype="string">equals</Condition>
+              <Data datatype="string">{9E6D0626-44C9-4B73-9D05-4FF287A0960C}.Result Status</Data>
+              <Value datatype="string">Success</Value>
+              <GroupID datatype="null"></GroupID>
+            </Entry>
+          </TRIGGERS>
+        </Object>
+        <Object>
+          <UniqueID datatype="string">{7C4481A5-C848-4767-A239-C3209C462B9A}</UniqueID>
+          <ParentID datatype="string">{79D17718-47C3-4695-BC67-58FA2EB9060C}</ParentID>
+          <Name datatype="string">Link</Name>
+          <Description datatype="null"></Description>
+          <PositionX datatype="null"></PositionX>
+          <PositionY datatype="null"></PositionY>
+          <ObjectType datatype="string">{7A65BD17-9532-4D07-A6DA-E0F89FA0203E}</ObjectType>
+          <SubType datatype="null"></SubType>
+          <Enabled datatype="bool">TRUE</Enabled>
+          <Flags datatype="null"></Flags>
+          <ASC_UseServiceSecurity datatype="null"></ASC_UseServiceSecurity>
+          <ASC_ThisAccount datatype="null"></ASC_ThisAccount>
+          <ASC_Username datatype="null"></ASC_Username>
+          <ASC_Password datatype="null"></ASC_Password>
+          <HasExtenders datatype="null"></HasExtenders>
+          <CreationTime datatype="date">130716220630000000</CreationTime>
+          <CreatedBy datatype="string"></CreatedBy>
+          <LastModified datatype="date">130716907640000000</LastModified>
+          <LastModifiedBy datatype="string">S-1-5-21-1965641610-867364815-4140263785-1104</LastModifiedBy>
+          <Deleted datatype="bool">FALSE</Deleted>
+          <Cost datatype="null"></Cost>
+          <Savings datatype="null"></Savings>
+          <Number datatype="int">0</Number>
+          <AlternateDisplayData datatype="null"></AlternateDisplayData>
+          <ASW_ObjectTimeout datatype="null"></ASW_ObjectTimeout>
+          <ASW_NotifyOnFail datatype="null"></ASW_NotifyOnFail>
+          <Flatten datatype="null"></Flatten>
+          <FlatUseLineBreak datatype="null"></FlatUseLineBreak>
+          <FlatUseCSV datatype="null"></FlatUseCSV>
+          <FlatUseCustomSep datatype="null"></FlatUseCustomSep>
+          <FlatCustomSep datatype="null"></FlatCustomSep>
+          <ObjectTypeName datatype="string">Link</ObjectTypeName>
+          <SourceObject datatype="string">{3CD81EEC-1275-4231-97D2-40B5E1537B7B}</SourceObject>
+          <TargetObject datatype="string">{9E6D0626-44C9-4B73-9D05-4FF287A0960C}</TargetObject>
+          <Color datatype="int">0</Color>
+          <WaitDelay datatype="int">0</WaitDelay>
+          <SubPoints datatype="null"></SubPoints>
+          <And datatype="null"></And>
+          <Label datatype="null"></Label>
+          <Width datatype="int">0</Width>
+        </Object>
+      </Policy>
+    </Folder>
+  </Policies>
+  <GlobalSettings>
+    <Counters />
+    <Variables>
+      <Folder>
+        <UniqueID>{00000000-0000-0000-0000-000000000005}</UniqueID>
+        <Objects />
+        <Folder>
+          <UniqueID>{C6DC0FD8-CA3D-4F53-8D01-E1B22B0D7624}</UniqueID>
+          <Name>Automys Library</Name>
+          <Description></Description>
+          <Objects />
+          <Folder>
+            <UniqueID>{A564E29A-004E-4F15-9A55-17AB284B56F6}</UniqueID>
+            <Name>PowerShell Integration</Name>
+            <Description></Description>
+            <Objects>
+              <Object>
+                <UniqueID datatype="string">{BDB8FB1C-2E7F-450C-9860-0897F9BACF03}</UniqueID>
+                <Name datatype="string">Global Variable 1</Name>
+                <Description datatype="string">An example global variable consumed as an input in a Run .Net Script PowerShell activity</Description>
+                <ObjectType datatype="string">{2E88BB5A-62F9-482E-84B0-4D963C987231}</ObjectType>
+                <SubType datatype="null"></SubType>
+                <Enabled datatype="bool">FALSE</Enabled>
+                <Flags datatype="null"></Flags>
+                <ASC_UseServiceSecurity datatype="null"></ASC_UseServiceSecurity>
+                <ASC_ThisAccount datatype="null"></ASC_ThisAccount>
+                <ASC_Username datatype="null"></ASC_Username>
+                <ASC_Password datatype="null"></ASC_Password>
+                <AlternateDisplayData datatype="null"></AlternateDisplayData>
+                <ASW_ObjectTimeout datatype="null"></ASW_ObjectTimeout>
+                <ASW_NotifyOnFail datatype="null"></ASW_NotifyOnFail>
+                <Flatten datatype="null"></Flatten>
+                <FlatUseLineBreak datatype="null"></FlatUseLineBreak>
+                <FlatUseCSV datatype="null"></FlatUseCSV>
+                <FlatUseCustomSep datatype="null"></FlatUseCustomSep>
+                <FlatCustomSep datatype="null"></FlatCustomSep>
+                <ObjectTypeName datatype="string">Variable</ObjectTypeName>
+                <Type datatype="null"></Type>
+                <Value datatype="string">Everyone's favorite variable value</Value>
+              </Object>
+            </Objects>
+          </Folder>
+        </Folder>
+      </Folder>
+    </Variables>
+    <ComputerGroups />
+    <Schedules />
+  </GlobalSettings>
+</ExportData>

@@ -1,0 +1,1 @@
+﻿Get-ADUser -filter * -SearchBase "OU=ECCO,DC=prd,DC=eccocorp,DC=net" | Where-Object {($_.Enabled -eq $false) -and ($_.DistinguishedName -notlike "*OU=Terminated*")} | ForEach-Object {Move-ADObject -Identity $_.DistinguishedName -TargetPath "OU=Terminated Users,OU=ECCO,DC=prd,DC=eccocorp,DC=net"}

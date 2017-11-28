@@ -1,0 +1,6 @@
+﻿Name,OU,Description
+ECCO Services,,
+Technical Services,"OU=ECCO Services",
+Database Hotel,"OU=Technical Services,OU=ECCO Services",
+Backup,"OU=Technical Services,OU=ECCO Services",
+DHCP,"OU=Technical Services,OU=ECCO Services",

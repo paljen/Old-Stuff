@@ -1,0 +1,61 @@
+﻿
+param (
+
+    [int]$Month
+
+)
+
+Function Get-PatchThuesday ([int] $Month)  
+{
+    $FindNthDay=2
+    $WeekDay='Tuesday' 
+
+    $Today=get-date -Month $Month 
+    $todayM=$Today.Month.ToString() 
+    $todayY=$Today.Year.ToString()
+     
+    [datetime]$StrtMonth=$todayM+'/1/'+$todayY 
+    while ($StrtMonth.DayofWeek -ine $WeekDay ) 
+    {$StrtMonth=$StrtMonth.AddDays(1)}
+     
+    $PatchDay=$StrtMonth.AddDays(7*($FindNthDay-1)) 
+    return $PatchDay
+}
+
+function main
+{
+    $date = Get-PatchThuesday $Month
+
+    "`n------Week 1------"
+    "Patch Tuesday is: $Date"
+       
+    "`n------Week 2------"
+    "Test PatchGroups 2nd Wednesday :"
+    "$($date.AddDays(8).AddHours(22)) - $($date.AddDays(8).AddHours(23).AddMinutes(59))"
+    "$($date.AddDays(9).AddHours(2)) - $($date.AddDays(9).AddHours(4))"
+
+    "`n------Week 3------"
+    "Prod PatchGroups 3rd Wednesday :"
+    "$($date.AddDays(15).AddHours(20)) - $($date.AddDays(15).AddHours(22))"
+    "$($date.AddDays(15).AddHours(22)) - $($date.AddDays(15).AddHours(23).AddMinutes(59))"
+    "$($date.AddDays(16).AddHours(2)) - $($date.AddDays(16).AddHours(4))"
+    "$($date.AddDays(16).AddHours(4)) - $($date.AddDays(1).AddHours(6))"
+
+    "`nInfrastructure PatchGroups 3. Wednesday :"
+    "$($date.AddDays(15).AddHours(23).AddMinutes(59)) - $($date.AddDays(16).AddHours(2))"
+    "$($date.AddDays(16).AddHours(6)) - $($date.AddDays(1).AddHours(8))"
+
+    "`nSCCM PatchGroups Saturday :" 
+    "$($date.AddDays(18).AddHours(02)) - $($date.AddDays(18).AddHours(04))"
+
+    "`nProd PatchGroups Sunday :" 
+    "$($date.AddDays(19).AddHours(8)) - $($date.AddDays(19).AddHours(10))"
+    "$($date.AddDays(19).AddHours(10)) - $($date.AddDays(19).AddHours(12))"
+
+    "`n------Week 4------"
+    "Infrastructure PatchGroups Month 2 - 1. Wednesday :"
+    "$($date.AddDays(22).AddHours(22)) - $($date.AddDays(22).AddHours(23).AddMinutes(59))"
+    "$($date.AddDays(22).AddHours(23).AddMinutes(59)) - $($date.AddDays(23).AddHours(02))"
+}
+
+main

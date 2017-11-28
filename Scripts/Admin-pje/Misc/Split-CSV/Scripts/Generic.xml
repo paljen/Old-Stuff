@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Version="1.0" LastChangeDate="08-10-2013 10:28:43">
+  <Function Name="ExecuteCommandLine" FriendlyText="Execute Command Line" Guid="c38326b2-8684-4136-9512-91dc2bb611a3">
+    <Parameter Name="Executable" FriendlyText="Executable to execute" />
+    <Parameter Name="Parameters" FriendlyText="Parameters" />
+    <Parameter Name="DoWait" FriendlyText="Wait for process to complete">
+      <ParameterValue FriendlyText="Yes">True</ParameterValue>
+      <ParameterValue FriendlyText="No">False</ParameterValue>
+    </Parameter>
+  </Function>
+  <Function Name="FileExists" FriendlyText="Check if file exist" Guid="38f0979c-bbe4-403d-ae16-772881abde1a">
+    <Parameter Name="File" FriendlyText="File to check" />
+    <ReturnValues>
+      <ReturnValue FriendlyText="Yes">True</ReturnValue>
+      <ReturnValue FriendlyText="No">False</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="RegKeyOrValueExists" FriendlyText="Check if registry key or value exist" Guid="55fbf3f2-d0e7-4c4e-8fc2-2d83124f752f">
+    <ReturnValues>
+      <ReturnValue FriendlyText="Yes">True</ReturnValue>
+      <ReturnValue FriendlyText="No">False</ReturnValue>
+    </ReturnValues>
+    <Parameter Name="RegHive" FriendlyText="Registry Hive">
+      <ParameterValue FriendlyText="HKEY_LOCAL_MACHINE">LocalMachine</ParameterValue>
+      <ParameterValue FriendlyText="HKEY_CLASSES_ROOT">ClassesRoot</ParameterValue>
+      <ParameterValue FriendlyText="HKEY_CURRENT_USER">CurrentUser</ParameterValue>
+      <ParameterValue FriendlyText="HKEY_USERS">Users</ParameterValue>
+      <ParameterValue FriendlyText="HKEY_CURRENT_CONFIG">CurrentConfig</ParameterValue>
+    </Parameter>
+    <Parameter Name="RegView" FriendlyText="Registry architecture (Require .NET 4.0)">
+      <ParameterValue FriendlyText="Default">Default</ParameterValue>
+      <ParameterValue FriendlyText="32-bit registry">Registry32</ParameterValue>
+      <ParameterValue FriendlyText="64-bit registry">Registry64</ParameterValue>
+    </Parameter>
+    <Parameter Name="RegKey" FriendlyText="Registry Key" />
+    <Parameter Name="RegVal" FriendlyText="Registry Value Name" />
+  </Function>
+  <Function Name="ServiceExists" FriendlyText="Check if a Service exist" Guid="f6c0554a-1096-466f-b166-1d645b2b7043">
+    <Parameter Name="ServiceName" FriendlyText="Service Name" />
+    <ReturnValues>
+      <ReturnValue FriendlyText="Yes">True</ReturnValue>
+      <ReturnValue FriendlyText="No">False</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="ProcessExists" FriendlyText="Check if a process is currently running" Guid="fbf65dbe-43a3-430e-b480-068e1672db91">
+    <Parameter Name="ProcessName" FriendlyText="Process name. Eg. calc.exe" />
+    <ReturnValues>
+      <ReturnValue FriendlyText="Yes">True</ReturnValue>
+      <ReturnValue FriendlyText="No">False</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="TerminateProcess" FriendlyText="Terminate a running process" Guid="ceffcce6-e858-4960-a184-229294e0fc96">
+    <Parameter Name="ProcessName" FriendlyText="Process Name" />
+    <ReturnValues>
+      <ReturnValue FriendlyText="True">True</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="StartStopService" FriendlyText="Start or Stop a Service" Guid="ec3ec819-97ab-4bcd-9364-9f01500d9073">
+    <Parameter Name="ServiceName" FriendlyText="Service Name" />
+    <Parameter Name="Action" FriendlyText="Action">
+      <ParameterValue FriendlyText="Start Service">Start</ParameterValue>
+      <ParameterValue FriendlyText="Stop Service">Stop</ParameterValue>
+    </Parameter>
+  </Function>
+  <Function Name="GetEnvironmentVariable" FriendlyText="Get Environment Variable" Guid="a6f81bd4-e59a-486d-8df1-3e33dc1335e3">
+    <Parameter Name="VariableName" FriendlyText="Environment Variable Name" />
+    <Parameter Name="Context" FriendlyText="Context to retrieve variable from">
+      <ParameterValue FriendlyText="Current Process">Process</ParameterValue>
+      <ParameterValue FriendlyText="Current User">User</ParameterValue>
+      <ParameterValue FriendlyText="Local Machine">Machine</ParameterValue>
+    </Parameter>
+  </Function>
+  <Function Name="SetEnvironmentVariable" FriendlyText="Set an Environment Variable" Guid="640581ca-e423-4554-961a-707529fc1f72">
+    <Parameter Name="VariableName" FriendlyText="Environment Variable Name" />
+    <Parameter Name="Value" FriendlyText="Value" />
+    <Parameter Name="Context" FriendlyText="Environment Context">
+      <ParameterValue FriendlyText="Local Machine">Machine</ParameterValue>
+      <ParameterValue FriendlyText="Current User">User</ParameterValue>
+      <ParameterValue FriendlyText="Current Process">Process</ParameterValue>
+    </Parameter>
+  </Function>
+  <Function Name="RemoveEnvironmentVariable" FriendlyText="Remove an Environment Variable" Guid="65957c20-4d8d-4351-a96b-df512debf642">
+    <Parameter Name="VariableName" FriendlyText="Environment Variable Name" />
+    <Parameter Name="Context" FriendlyText="Environment Context">
+      <ParameterValue FriendlyText="Local Machine">Machine</ParameterValue>
+      <ParameterValue FriendlyText="Current User">User</ParameterValue>
+      <ParameterValue FriendlyText="Current Process">Process</ParameterValue>
+    </Parameter>
+    <ReturnValues>
+      <ReturnValue FriendlyText="True">True</ReturnValue>
+      <ReturnValue FriendlyText="False">False</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="SetScriptVariable" FriendlyText="Set Script Variable" Guid="e9e4b185-0b33-4314-b9b1-7083cb18887f">
+    <Parameter Name="VariableName" FriendlyText="Variable Name" />
+    <Parameter Name="Value" FriendlyText="Value" />
+    <ReturnValues>
+      <ReturnValue FriendlyText="True">True</ReturnValue>
+      <ReturnValue FriendlyText="False">False</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="GetScriptVariable" FriendlyText="Get Script Variable" Guid="da032d9d-5402-4cce-ae78-3b02ece12f8e">
+    <Parameter Name="VariableName" FriendlyText="Variable Name" />
+  </Function>
+  <Function Name="RemoveScriptVariable" FriendlyText="Remove Script Variable" Guid="0d37ff25-0680-4235-94e5-165b74b5fde1">
+    <Parameter Name="VariableName" FriendlyText="Variable Name" />
+    <ReturnValues>
+      <ReturnValue FriendlyText="True">True</ReturnValue>
+      <ReturnValue FriendlyText="False">False</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="WriteToLogFile" FriendlyText="Write Text To Log File" Guid="c7029b1d-4933-41f3-ba66-52220009e9c8">
+    <Parameter Name="Message" FriendlyText="Message" />
+  </Function>
+  <Function Name="GetMSIProductID" FriendlyText="Get MSI Product ID from Add/Remove Programs Display Name" Guid="21fa1aa2-29e2-4626-b949-2d806193d9b2">
+    <Parameter Name="DisplayName" FriendlyText="Display Name in Add/Remove Programs" />
+    <Parameter Name="RegView" FriendlyText="Registry Architecture (Require .NET 4.0)">
+      <ParameterValue FriendlyText="Default">Default</ParameterValue>
+      <ParameterValue FriendlyText="32-Bit Registry">Registry32</ParameterValue>
+      <ParameterValue FriendlyText="64-Bit Registry">Registry64</ParameterValue>
+    </Parameter>
+  </Function>
+  <Function Name="GetComputerName" FriendlyText="Get Hostname of Current Computer" Guid="ec900c13-2163-438a-9714-322f44f2b762" />
+  <Function Name="ExecuteWQLQuery" FriendlyText="Execute WMI Query" Guid="9d327977-48a9-40c7-b900-4cdbaa3e2654">
+    <Parameter Name="Namespace" FriendlyText="WMI Namespace" />
+    <Parameter Name="Query" FriendlyText="Query" />
+    <Parameter Name="PropertyName" FriendlyText="Property Name to Return" />
+  </Function>
+  <Function Name="GetLoggedOnUserName" FriendlyText="Get Name of current logged on User" Guid="fd5e2e84-ad92-4b5f-ac8c-083bfc25b385" />
+  <Function Name="FolderExists" FriendlyText="Check if Directory/Folder exist" Guid="bd30b5b2-edb9-40d7-9744-b7ce3a318e10">
+    <Parameter Name="FolderPath" FriendlyText="Path to folder" />
+    <ReturnValues>
+      <ReturnValue FriendlyText="Yes">True</ReturnValue>
+      <ReturnValue FriendlyText="No">False</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="CreateFolder" FriendlyText="Create a Directory/Folder" Guid="e4338dde-009b-4dc7-b29b-b39376451f0f">
+    <Parameter Name="FolderPath" FriendlyText="Folder(s) to create" />
+    <ReturnValues>
+      <ReturnValue FriendlyText="True">True</ReturnValue>
+      <ReturnValue FriendlyText="False">False</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="CopyFolder" FriendlyText="Copy Folder" Guid="975b5b7a-e980-4447-8056-aef3979a1f87">
+    <Parameter Name="SourceFolder" FriendlyText="Folder to Copy" />
+    <Parameter Name="DestinationFolder" FriendlyText="Destination Folder" />
+    <Parameter Name="Overwrite" FriendlyText="Overwrite existing files in destination folder">
+      <ParameterValue FriendlyText="Yes">True</ParameterValue>
+      <ParameterValue FriendlyText="No">False</ParameterValue>
+    </Parameter>
+    <ReturnValues>
+      <ReturnValue FriendlyText="True">True</ReturnValue>
+      <ReturnValue FriendlyText="False">False</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="GetSubString" FriendlyText="Get substring of a string" Guid="7dd7fdd8-9963-496e-9fdd-297ad2257714">
+    <Parameter Name="String" FriendlyText="Source String" />
+    <Parameter Name="Start" FriendlyText="Where to start" />
+    <Parameter Name="Length" FriendlyText="Length of substring" />
+  </Function>
+  <Function Name="DisableOpenFileSecurityWarning" FriendlyText="Disable Open File Security Warning" Guid="028782ff-daea-4ff8-9ea5-01712d021d74">
+    <ReturnValues>
+      <ReturnValue FriendlyText="True">True</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="WaitForProcessToEnd" FriendlyText="Wait for a process to end" Guid="8bbcad69-90c8-48db-9884-40cd87e93fe6">
+    <Parameter Name="ProcessName" FriendlyText="Process Name" />
+    <ReturnValues>
+      <ReturnValue FriendlyText="True">True</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="WaitForProcessToStart" FriendlyText="Wait for a process to start" Guid="890a5414-f353-41f3-b81c-fea6be39bea2">
+    <Parameter Name="ProcessName" FriendlyText="Process Name" />
+    <ReturnValues>
+      <ReturnValue FriendlyText="True">True</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="CopyFilesToFolder" FriendlyText="Copy File(s) to folder (Overwrites existing)" Guid="4bf32a95-8125-4065-aa80-189642bedaca">
+    <Parameter Name="SourceFile" FriendlyText="File(s) to copy" />
+    <Parameter Name="DestinationFolder" FriendlyText="Destination Folder" />
+    <ReturnValues>
+      <ReturnValue FriendlyText="True">True</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="WriteToRegistry" FriendlyText="Write To Registry" Guid="3d72c3f1-c23d-482a-a5d9-c81cd48b38ba">
+    <Parameter Name="RegHive" FriendlyText="Registry Hive Key">
+      <ParameterValue FriendlyText="HKEY_LOCAL_MACHINE">HKEY_LOCAL_MACHINE</ParameterValue>
+      <ParameterValue FriendlyText="HKEY_CURRENT_USER">HKEY_CURRENT_USER</ParameterValue>
+      <ParameterValue FriendlyText="HKEY_CLASSES_ROOT">HKEY_CLASSES_ROOT</ParameterValue>
+      <ParameterValue FriendlyText="HKEY_USERS">HKEY_USERS</ParameterValue>
+      <ParameterValue FriendlyText="HKEY_CURRENT_CONFIG">HKEY_CURRENT_CONFIG</ParameterValue>
+    </Parameter>
+    <ReturnValues>
+      <ReturnValue FriendlyText="True">True</ReturnValue>
+    </ReturnValues>
+    <Parameter Name="RegKey" FriendlyText="Registry Key" />
+    <Parameter Name="RegValueName" FriendlyText="Value Name" />
+    <Parameter Name="RegValue" FriendlyText="Value to write" />
+    <Parameter Name="RegType" FriendlyText="Value Type">
+      <ParameterValue FriendlyText="String">String</ParameterValue>
+      <ParameterValue FriendlyText="ExpandString">ExpandString</ParameterValue>
+      <ParameterValue FriendlyText="Binary">Binary</ParameterValue>
+      <ParameterValue FriendlyText="DWord">DWord</ParameterValue>
+      <ParameterValue FriendlyText="MultiString">MultiString</ParameterValue>
+      <ParameterValue FriendlyText="QWord">QWord</ParameterValue>
+    </Parameter>
+  </Function>
+  <Function Name="DeleteRegistryValue" FriendlyText="Delete Registry Value" Guid="bf1442f0-19db-47fc-b634-7f45fc6d0e7c">
+    <Parameter Name="RegHive" FriendlyText="Registry Hive">
+      <ParameterValue FriendlyText="HKEY_LOCAL_MACHINE">LocalMachine</ParameterValue>
+      <ParameterValue FriendlyText="HKEY_CLASSES_ROOT">ClassesRoot</ParameterValue>
+      <ParameterValue FriendlyText="HKEY_CURRENT_USER">CurrentUser</ParameterValue>
+      <ParameterValue FriendlyText="HKEY_USERS">Users</ParameterValue>
+      <ParameterValue FriendlyText="HKEY_CURRENT_CONFIG">CurrentConfig</ParameterValue>
+    </Parameter>
+    <Parameter Name="RegKey" FriendlyText="Registry Key" />
+    <Parameter Name="RegValueName" FriendlyText="Value Name" />
+    <ReturnValues>
+      <ReturnValue FriendlyText="True">True</ReturnValue>
+      <ReturnValue FriendlyText="False">False</ReturnValue>
+    </ReturnValues>
+    <Parameter Name="RegView" FriendlyText="Registry Architecture (Require .NET 4.0)">
+      <ParameterValue FriendlyText="Default">Default</ParameterValue>
+      <ParameterValue FriendlyText="32-bit registry">Registry32</ParameterValue>
+      <ParameterValue FriendlyText="64-bit registry">Registry64</ParameterValue>
+    </Parameter>
+  </Function>
+  <Function Name="DeleteRegistryKey" FriendlyText="Delete Registry Key" Guid="e3c3ee00-8e4e-47a7-ac55-cc351e5bdf01">
+    <Parameter Name="RegHive" FriendlyText="Registry Hive Key">
+      <ParameterValue FriendlyText="HKEY_LOCAL_MACHINE">LocalMachine</ParameterValue>
+      <ParameterValue FriendlyText="HKEY_CLASSES_ROOT">ClassesRoot</ParameterValue>
+      <ParameterValue FriendlyText="HKEY_CURRENT_USER">CurrentUser</ParameterValue>
+      <ParameterValue FriendlyText="HKEY_USERS">Users</ParameterValue>
+      <ParameterValue FriendlyText="HKEY_CURRENT_CONFIG">CurrentConfig</ParameterValue>
+    </Parameter>
+    <Parameter Name="RegKey" FriendlyText="Registry Key to Delete" />
+    <Parameter Name="RegView" FriendlyText="Registry Architecture (Require .NET 4.0)">
+      <ParameterValue FriendlyText="Default">Default</ParameterValue>
+      <ParameterValue FriendlyText="32-bit registry">Registry32</ParameterValue>
+      <ParameterValue FriendlyText="64-bit registry">Registry64</ParameterValue>
+    </Parameter>
+    <ReturnValues>
+      <ReturnValue FriendlyText="True">True</ReturnValue>
+      <ReturnValue FriendlyText="False">False</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="ReplaceInTextFile" FriendlyText="Replace Text in Text-File" Guid="b438c417-918f-4163-b64c-f79efc6f9def">
+    <Parameter Name="TextFile" FriendlyText="Text File" />
+    <Parameter Name="TextToReplace" FriendlyText="Text to search for and replace" />
+    <Parameter Name="Value" FriendlyText="Replace Value" />
+    <ReturnValues>
+      <ReturnValue FriendlyText="True">True</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="Execute-Job" FriendlyText="Execute Job" Guid="b10c4fb7-ebdb-47fc-83bd-091854ec2c46">
+    <Parameter Name="JobName" FriendlyText="Name of job to execute" />
+  </Function>
+  <Function Name="ShowProgressUI" FriendlyText="Show Progress UI" Guid="fd215d30-c2f7-4367-ba65-dc9375c0a131">
+    <Parameter Name="SetupUIConfigFile" FriendlyText="XML-file containing confiuguration for UI" />
+    <Parameter Name="RtfDoc" FriendlyText="RFT-document containing information for end-users" />
+    <Parameter Name="WaitExit" FriendlyText="Wait for the UI to exit">
+      <ParameterValue FriendlyText="Yes">True</ParameterValue>
+      <ParameterValue FriendlyText="No">False</ParameterValue>
+    </Parameter>
+    <ReturnValues>
+      <ReturnValue FriendlyText="True">True</ReturnValue>
+      <ReturnValue FriendlyText="False">False</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="DeleteFolder" FriendlyText="Delete Folder/Directory" Guid="480ae40c-78c9-4dee-ba4d-9749fa29d5c0">
+    <Parameter Name="Folder" FriendlyText="Path to folder" />
+    <ReturnValues>
+      <ReturnValue FriendlyText="True">True</ReturnValue>
+      <ReturnValue FriendlyText="False">False</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="DeleteFile" FriendlyText="Delete File" Guid="c88d023b-5b70-4aa0-8344-904ecc8e403e">
+    <Parameter Name="File" FriendlyText="File to delete" />
+    <ReturnValues>
+      <ReturnValue FriendlyText="True">True</ReturnValue>
+      <ReturnValue FriendlyText="False">False</ReturnValue>
+    </ReturnValues>
+  </Function>
+  <Function Name="WriteToOfflineRegHive" FriendlyText="Write To Offline Registry Hive" Guid="14b1d9c2-aded-4a2e-ba56-b9b3d2ef0fa1">
+    <ReturnValues>
+      <ReturnValue FriendlyText="True">True</ReturnValue>
+      <ReturnValue FriendlyText="False">False</ReturnValue>
+    </ReturnValues>
+    <Parameter Name="HiveFile" FriendlyText="Path to offline registry hive file" />
+    <Parameter Name="RegKey" FriendlyText="Registry Key" />
+    <Parameter Name="RegValueName" FriendlyText="Value Name" />
+    <Parameter Name="RegValue" FriendlyText="Value to write" />
+    <Parameter Name="RegType" FriendlyText="Value Type">
+      <ParameterValue FriendlyText="String">String</ParameterValue>
+      <ParameterValue FriendlyText="ExpandString">ExpandString</ParameterValue>
+      <ParameterValue FriendlyText="Binary">Binary</ParameterValue>
+      <ParameterValue FriendlyText="DWord">DWord</ParameterValue>
+      <ParameterValue FriendlyText="MultiString">MultiString</ParameterValue>
+      <ParameterValue FriendlyText="QWord">QWord</ParameterValue>
+    </Parameter>
+  </Function>
+</Library>

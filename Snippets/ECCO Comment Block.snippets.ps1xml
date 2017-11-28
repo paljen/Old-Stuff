@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+    <Snippets  xmlns='http://schemas.microsoft.com/PowerShell/Snippets'>
+        <Snippet Version='1.0.0'>
+            <Header>
+                <Title>ECCO Comment Block</Title>
+                <Description>Basic Comment Block</Description>
+                <Author>Palle Jensen</Author>
+                <SnippetTypes>
+                    <SnippetType>Expansion</SnippetType>
+                </SnippetTypes>
+            </Header>
+
+            <Code>
+                <Script Language='PowerShell' CaretOffset='50'>
+                    <![CDATA[
+<#
+.SYNOPSIS
+	A brief description.
+
+.DESCRIPTION
+	A detailed description.
+
+.PARAMETER  <Parameter-Name>
+	The description of a parameter. Add a .PARAMETER keyword for each 
+    parameter in the syntax.
+
+.EXAMPLE
+	A sample command , optionally followed by sample output and a description. 
+    Repeat this keyword for each example.
+
+.INPUTS
+	The Microsoft .NET Framework types of objects that can be piped to the
+	function. You can also include a description of the input objects.
+
+.OUTPUTS
+	The .NET Framework type of the objects that the function returns. You can
+	also include a description of the returned objects.
+
+.NOTES
+	Version:		1.0.0
+	Author:			
+	Creation Date:	
+	Purpose/Change:	Initial function development
+#>
+]]>
+                </Script>
+            </Code>
+
+    </Snippet>
+</Snippets>
+

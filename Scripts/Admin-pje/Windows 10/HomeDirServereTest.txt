@@ -1,0 +1,4 @@
+AE=\\aesamp02\Homedir
+AT=\\dkhqfile01\homedir
+DK=\\DK\homedir
+DKHQ=\\DKHQ\homedir
